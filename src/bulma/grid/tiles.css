@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'tablet'.
-        on line 28 of D:\_work\DireLegis2019\www\src\bulma\grid\tiles.sass, in `tablet'
-        from line 28 of D:\_work\DireLegis2019\www\src\bulma\grid\tiles.sass
+        on line 28 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\tiles.sass, in `tablet'
+        from line 28 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\tiles.sass
 
 23:   &.is-vertical
 24:     flex-direction: column
@@ -16,8 +16,8 @@ Error: Undefined mixin 'tablet'.
 33:         flex: none
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\grid\tiles.sass:28:in `tablet'
-D:\_work\DireLegis2019\www\src\bulma\grid\tiles.sass:28
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\tiles.sass:28:in `tablet'
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\tiles.sass:28
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablet'.\A         on line 28 of D:\_work\DireLegis2019\www\src\bulma\grid\tiles.sass, in `tablet'\A         from line 28 of D:\_work\DireLegis2019\www\src\bulma\grid\tiles.sass\A \A 23:   &.is-vertical\A 24:     flex-direction: column\A 25:     & > .tile.is-child:not(:last-child)\A 26:       margin-bottom: 1.5rem !important\A 27:   // Responsiveness\A 28:   +tablet\A 29:     &:not(.is-child)\A 30:       display: flex\A 31:     @for $i from 1 through 12\A 32:       &.is-#{$i}\A 33:         flex: none"; }
+  content: "Error: Undefined mixin 'tablet'.\A         on line 28 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\tiles.sass, in `tablet'\A         from line 28 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\tiles.sass\A \A 23:   &.is-vertical\A 24:     flex-direction: column\A 25:     & > .tile.is-child:not(:last-child)\A 26:       margin-bottom: 1.5rem !important\A 27:   // Responsiveness\A 28:   +tablet\A 29:     &:not(.is-child)\A 30:       display: flex\A 31:     @for $i from 1 through 12\A 32:       &.is-#{$i}\A 33:         flex: none"; }

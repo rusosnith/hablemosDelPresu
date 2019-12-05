@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$scheme-invert".
-        on line 3 of D:\_work\DireLegis2019\www\src\bulma\components\modal.sass
+        on line 3 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\modal.sass
 
 1: $modal-z: 40 !default
 2: 
@@ -12,7 +12,7 @@ Error: Undefined variable: "$scheme-invert".
 8: $modal-content-spacing-tablet: 40px !default
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\components\modal.sass:3
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\modal.sass:3
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/funcall.rb:186:in `perform_arg'
@@ -56,4 +56,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$scheme-invert\".\A         on line 3 of D:\_work\DireLegis2019\www\src\bulma\components\modal.sass\A \A 1: $modal-z: 40 !default\A 2: \A 3: $modal-background-background-color: rgba($scheme-invert, 0.86) !default\A 4: \A 5: $modal-content-width: 640px !default\A 6: $modal-content-margin-mobile: 20px !default\A 7: $modal-content-spacing-mobile: 160px !default\A 8: $modal-content-spacing-tablet: 40px !default"; }
+  content: "Error: Undefined variable: \"$scheme-invert\".\A         on line 3 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\modal.sass\A \A 1: $modal-z: 40 !default\A 2: \A 3: $modal-background-background-color: rgba($scheme-invert, 0.86) !default\A 4: \A 5: $modal-content-width: 640px !default\A 6: $modal-content-margin-mobile: 20px !default\A 7: $modal-content-spacing-mobile: 160px !default\A 8: $modal-content-spacing-tablet: 40px !default"; }

@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$text".
-        on line 1 of D:\_work\DireLegis2019\www\src\bulma\components\card.sass
+        on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\card.sass
 
 1: $card-color: $text !default
 2: $card-background-color: $scheme-main !default
@@ -10,7 +10,7 @@ Error: Undefined variable: "$text".
 6: $card-header-color: $text-strong !default
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\components\card.sass:1
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\card.sass:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:482:in `visit_variable'
@@ -46,4 +46,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$text\".\A         on line 1 of D:\_work\DireLegis2019\www\src\bulma\components\card.sass\A \A 1: $card-color: $text !default\A 2: $card-background-color: $scheme-main !default\A 3: $card-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02) !default\A 4: \A 5: $card-header-background-color: transparent !default\A 6: $card-header-color: $text-strong !default"; }
+  content: "Error: Undefined variable: \"$text\".\A         on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\card.sass\A \A 1: $card-color: $text !default\A 2: $card-background-color: $scheme-main !default\A 3: $card-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02) !default\A 4: \A 5: $card-header-background-color: transparent !default\A 6: $card-header-color: $text-strong !default"; }

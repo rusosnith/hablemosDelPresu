@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$block-spacing".
-        on line 1 of D:\_work\DireLegis2019\www\src\bulma\components\panel.sass
+        on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\panel.sass
 
 1: $panel-margin: $block-spacing !default
 2: $panel-item-border: 1px solid $border-light !default
@@ -10,7 +10,7 @@ Error: Undefined variable: "$block-spacing".
 6: $panel-heading-background-color: $border-light !default
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\components\panel.sass:1
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\panel.sass:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:482:in `visit_variable'
@@ -46,4 +46,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$block-spacing\".\A         on line 1 of D:\_work\DireLegis2019\www\src\bulma\components\panel.sass\A \A 1: $panel-margin: $block-spacing !default\A 2: $panel-item-border: 1px solid $border-light !default\A 3: $panel-radius: $radius-large !default\A 4: $panel-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02) !default\A 5: \A 6: $panel-heading-background-color: $border-light !default"; }
+  content: "Error: Undefined variable: \"$block-spacing\".\A         on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\panel.sass\A \A 1: $panel-margin: $block-spacing !default\A 2: $panel-item-border: 1px solid $border-light !default\A 3: $panel-radius: $radius-large !default\A 4: $panel-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02) !default\A 5: \A 6: $panel-heading-background-color: $border-light !default"; }

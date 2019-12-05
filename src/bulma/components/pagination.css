@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$text-strong".
-        on line 1 of D:\_work\DireLegis2019\www\src\bulma\components\pagination.sass
+        on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\pagination.sass
 
 1: $pagination-color: $text-strong !default
 2: $pagination-border-color: $border !default
@@ -10,7 +10,7 @@ Error: Undefined variable: "$text-strong".
 6: $pagination-item-font-size: 1em !default
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\components\pagination.sass:1
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\pagination.sass:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:482:in `visit_variable'
@@ -46,4 +46,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$text-strong\".\A         on line 1 of D:\_work\DireLegis2019\www\src\bulma\components\pagination.sass\A \A 1: $pagination-color: $text-strong !default\A 2: $pagination-border-color: $border !default\A 3: $pagination-margin: -0.25rem !default\A 4: $pagination-min-width: $control-height !default\A 5: \A 6: $pagination-item-font-size: 1em !default"; }
+  content: "Error: Undefined variable: \"$text-strong\".\A         on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\pagination.sass\A \A 1: $pagination-color: $text-strong !default\A 2: $pagination-border-color: $border !default\A 3: $pagination-margin: -0.25rem !default\A 4: $pagination-min-width: $control-height !default\A 5: \A 6: $pagination-item-font-size: 1em !default"; }

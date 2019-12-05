@@ -7,10 +7,46 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/bulma-steps.css">
+
+    <style type="text/css">
+
+    
+      #nav-container-top {
+        height: 1px;
+      }
+
+     #nav-container {
+         position: sticky;
+        top: 0;
+        padding:10px;
+
+        transition: 0.15s all ease;
+      }
+
+      #nav-container #title{
+        transform: scale(1);
+      }
+
+
+      .nav-container-sticky #title{
+        transform: scale(0) !important;
+        display: none;
+      }
+
+    
+      .nav-container-sticky {
+        z-index: 10;
+        background-color: white;
+        padding: 2px;
+      }
+    
+ 
+    </style>
+
   </head>
   <body>
 
-    <section class="hero is-info ">
+    <section class="hero is-info is-fullheight">
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
         <header class="navbar">
@@ -45,26 +81,18 @@
 
 
       <!-- Hero content: will be in the middle -->
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <div class="columns is-mobile is-centered">
+      <div class="hero-body ">
+        <div class="container has-text-centered ">
+          <div class="columns is-mobile is-centered ">
             <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
                 <figure class="image is-centered" >
                   <img src="images/DL_LogoHablemosv01.png" >
                 </figure>
 
-            <h2>
-              El presupuesto es una ley anual que debate y sanciona el Congreso de la Nación donde se planifican los ingresos que
-              recibirá el Estado y cómo se gastarán para satisfacer las necesidades de la ciudadanía.<br> ¿Cuánta plata va a tener el
-              Estado el próximo año? ¿Cuál es el origen de los recursos? ¿Quién gasta? ¿En qué se gasta? ¿Para qué se gasta?
-              <Br><Br>
-              Mejorar una ruta, comprar equipamiento tecnológico, construir escuelas u hospitales, pagar jubilaciones, desarrollar
-              el
-              transporte público. Todo ello forma parte de la inversión pública que realiza año a año el Estado Nacional.
-              <Br><Br>
-              El presupuesto se discute entre pocos, lo entienden algunos, pero afecta a todos. Para formar parte de esta
-              conversación
-              es importante conocer cómo es el camino que recorre el proyecto de Ley de Presupuesto hasta convertirse en Ley.
+            <h2 class="subtitle">
+            ¿Cuánta plata va a tener el Estado el próximo año? ¿Cuál es el origen de los recursos? ¿Quién gasta? ¿En qué se gasta?
+            ¿Para qué se gasta? ¿Quién lo decide?<br>
+            El presupuesto se discute entre pocos, lo entienden algunos, pero nos afecta a todos.
             </h2>
             </div>
           </div>
@@ -74,7 +102,7 @@
       </div>
     
       <!-- Hero footer: will stick at the bottom -->
-      <div class="hero-foot">
+      <!-- <div class="hero-foot">
         <nav class="tabs is-boxed is-fullwidth">
           <div class="container">
             <ul>
@@ -85,7 +113,8 @@
             </ul>
           </div>
         </nav>
-      </div>
+      </div> -->
+
     </section>
 
 
@@ -112,8 +141,9 @@
      </div>
     </section>
 
-    <section  class="section is-medium">
-      <div class="container is-widescreen">
+    <div id="nav-container-top"></div>
+    <section  class="section is-medium" id="nav-container">
+      <div class="container is-widescreen" id="title">
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
             <h2 class="title">
@@ -234,9 +264,40 @@
             </article>
             
 
-          <figure class="image is-5by3">
-            <img src="" alt="hemiciclo">
-          </figure>
+
+
+              <div class="content">
+
+                  <h4 class="subtitle is-5">Nueva conformación Diputados 2020</h4>
+                  <div class="flourish-embed" data-src="visualisation/1047247"></div>
+                  <script src="https://public.flourish.studio/resources/embed.js"></script>
+                
+
+                  
+                </div>
+
+              <div class="notification">
+              <span class="icon has-text-primary is-pulled-right">
+                <i class="fa fa-exclamation-triangle" style="    font-size: 20px; margin-right: -20px;"></i>
+              </span>
+              <h2 class="subtitle">En los últimos 10 años:</h2>
+              <nav class="level">
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">Los Presidentes de la Cámara de Diputados fueron:</p>
+                    <p class="subtitle">Varones, Abogados, +49 años</p>
+                  </div>
+                </div>
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">Los Jefes de Gabinete fueron:</p>
+                    <p class="subtitle">Varones, +36 años</p>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+          
           </div>
         </div>
       </div>
@@ -256,31 +317,413 @@
                 establece un orden para tratar las diferentes partes del proyecto y puede citar a ministros, secretarios y funcionarios
                 del Poder Ejecutivo para que brinden las aclaraciones que consideren necesarias.
               </h3>
-                    
-              <figure class="image is-5by3">
-                <img src="" alt="cargografias">
-              </figure>
 
-                <figure class="image is-5by3">
-                  <img src="" alt="reuniones">
-                </figure>
+                    <div class="notification">
+                      <span class="icon has-text-primary is-pulled-right">
+                        <i class="fa fa-exclamation-triangle" style="    font-size: 20px; margin-right: -20px;"></i>
+                      </span>
+                      <h2 class="subtitle">Comisión de Presupuesto y Hacienda de Diputados<Br> En los últimos 10 años:</h2>
+                      
+                      <nav class="level columns is-multiline">
+                        <div class="level-item column has-text-centered">
+                          <div>
+                            <p class="heading ">Los Presidentes de la Comisión:</p>
+                            <p class="subtitle has-text-primary">Varones, +44 años, del oficialismo</p>
+                          </div>
+                        </div>
+                        <div class="level-item column has-text-centered">
+                          <div>
+                            <p class="heading ">El porcentaje de diputadas que integraron la Comisión:</p>
+                            <p class="subtitle has-text-primary">menos del 38%</p>
+                          </div>
+                        </div>
+                        <div class="level-item column has-text-centered">
+                          <div>
+                            <p class="heading ">Eran de la Pcia de Santa Fe:</p>
+                            <p class="subtitle has-text-primary">67%</p>
+                          </div>
+                        </div>
+                        <div class="level-item column has-text-centered">
+                          <div>
+                            <p class="heading ">Presidentes de comisión:</p>
+                            <p class="subtitle has-text-primary">66,7% contadores y 33,3% Lic. en economía</p>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
 
+        </div>
+      </div>
 
-                <article class="message is-primary">
-                  <div class="message-header">
-                    <p>Directorio Legislativo Dice</p>
-                  </div>
-                  <div class="message-body">
-                    El trabajo más intenso se da formalmente en la etapa del trabajo en Comisión Presupuesto en
-                    HCDN, pero la negociación no se agota en las vías institucionales y el diálogo sigue en los despachos.
-                      <figure class="image is-5by3">
-                        <img src="" alt="fecha de presentaciones">
-                      </figure>
-                  </div>
-                </article>
-
-            </div>
+          <div class="box is-fullwidth">
+            <h2 class="subtitle">Historial de Cargos de los Presidentes de Comisión (2008-2019)</h2>
+            <table class="table is-striped is-narrow is-hoverable is-size-7	">
+              <tbody>
+                <tr>
+                  <th colspan="1" rowspan="1">
+                    Nombre y apellido
+                  </th>
+                  <th colspan="1" rowspan="1">
+                    Período en el que presidió la comisión
+                  </th>
+                  <th colspan="1" rowspan="1">
+                    Actividad pública previa
+                  </th>
+                  <th colspan="1" rowspan="1">
+                    Actividad privada previa
+                  </th>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="2">
+                    <span>Walter Alfredo Agosto
+                  </td>
+                  <td colspan="1" rowspan="2">
+                    <p>2008-2009
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    1) Ministro de Hacienda y Finanzas de Santa Fe (2003-2007)
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    1) Ejercicio de la profesión de contador
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1">
+                    2) Secretario de Hacienda en Santa Fe Capital (1999-2003)
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    2) Docente universitario
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="3">
+                    <span c88">Gustavo Ángel Marconato
+                  </td>
+                  <td colspan="1" rowspan="3">
+                    <p>2010-2011
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    1) Diputado Nacional (2003-2007)
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    1) Ejercicio de la profesión de contador
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1">
+                    2) Subsecretario de Asuntos Municipales, Ministerio del Interior de la Nación
+                    (2003-2004)
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1">
+                    3) Director del Instituto Autárquico Provincial de Obra Social (IAPOS) Santa Fe
+                    (1994-1995)
+                  </td>
+                  <td c124" colspan="1" rowspan="1">
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="5">
+                    <span>Roberto José Feletti
+                  </td>
+                  <td colspan="1" rowspan="5">
+                    <p>2012-2013 y 2014-2015
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    1) Secretario de política económica, Minsiterio de Economía y Finanzas Públicas
+                    de la Nación (2009-2011)
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    1) Integrante del Directorio de la Corporación Andina de Fomento (2011)
+          
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1">
+                    2)Vicepresidente, Banco de la Nación Argentina (2006-2009)
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    2) Miembro &nbsp;del Consejo Consultivo del Banco Interamericano de Exportaciones
+                    (BLABEX) (2009-2012)
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1">
+                    3) Representante Argentino en el grupo de trabajo sobre integración financiera de
+                    la UNASUR (2006-2011)
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    3) Miembro del Consejo de Administración de la Fundación Centro de Economía y
+                    Finanzas para el Desarrollo de la Argentina (2006-2009)
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1">
+                    4) Ministro de infraestructura y planeamiento CABA (2000-2003)
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    4) Presidente de Nación Fideicomiso S.A. (2006-2009)
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1">
+                    5) Director del Banco Ciudad CABA (1998-2000)
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    &nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="3">
+                    <span>Luciano Andrés Laspina
+                  </td>
+                  <td colspan="1" rowspan="3">
+                    <p>2016-2017 y 2018-2019
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    1) Subgerente General de Finanzas del Banco Ciudad (2008-2015)
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    1) Socio fundador de Macro-visión Consultora (2002-2008)
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1">
+                    2) Asesor en la Secretaría de Política Económica del Ministerio de Economía de la
+                    Nación
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    2) Profesor de macroeconomía, Universidad Nacional de Rosario, Universidad del
+                    CEMA, Escuela de posgrado de la Universidad de la Plata.
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1">
+                    3) Asesor del Presidente del Banco Central de la República Argentina
+                  </td>
+                  <td colspan="1" rowspan="1">
+                    3) Profesor de macroeconomía y macroeconomía bancaria, Universidad Torcuato Di
+                    Tella
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          
           </div>
+
+          <div class="columns is-mobile is-centered">
+            <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
+              
+                          <div class="notification image has-content-centered">
+                            <h2 class="subtitle">Cantidad reuniones de la Comisión por el Proyecto de ley de presupuesto</h2>
+                          <svg version="1.1" viewBox="0.0 0.0 611.0 371.0" fill="none" stroke="none" stroke-linecap="square"
+                            stroke-miterlimit="10" width="611" height="371" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns="http://www.w3.org/2000/svg" style="margin:auto; display:block">
+                            <path fill="" d="M0 0L611.0 0L611.0 371.0L0 371.0L0 0Z" fill-rule="nonzero" />
+                            <clipPath id="id_0">
+                              <path d="M18.55 18.55L592.45 18.55L592.45 332.45L18.55 332.45L18.55 18.55Z" clip-rule="nonzero" />
+                            </clipPath>
+                            <path stroke="#000000" stroke-width="0.0" stroke-linecap="butt" stroke-opacity="0.0" clip-path="url(#id_0)"
+                              d="M74.0 332.0L38.0 332.0L38.0 125.0C38.0 123.89543 38.89543 123.0 40.0 123.0L72.0 123.0C73.10457 123.0 74.0 123.89543 74.0 125.0Z"
+                              fill-rule="nonzero" />
+                            <path fill="#76bf68" clip-path="url(#id_0)"
+                              d="M74.0 332.0L38.0 332.0L38.0 125.0C38.0 123.89543 38.89543 123.0 40.0 123.0L72.0 123.0C73.10457 123.0 74.0 123.89543 74.0 125.0Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#000000" stroke-width="0.0" stroke-linecap="butt" stroke-opacity="0.0" clip-path="url(#id_0)"
+                              d="M129.0 332.0L93.0 332.0L93.0 90.0C93.0 88.89543 93.89543 88.0 95.0 88.0L127.0 88.0C128.10457 88.0 129.0 88.89543 129.0 90.0Z"
+                              fill-rule="nonzero" />
+                            <path fill="#76bf68" clip-path="url(#id_0)"
+                              d="M129.0 332.0L93.0 332.0L93.0 90.0C93.0 88.89543 93.89543 88.0 95.0 88.0L127.0 88.0C128.10457 88.0 129.0 88.89543 129.0 90.0Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#000000" stroke-width="0.0" stroke-linecap="butt" stroke-opacity="0.0" clip-path="url(#id_0)"
+                              d="M185.0 332.0L149.0 332.0L149.0 230.0C149.0 228.89543 149.89543 228.0 151.0 228.0L183.0 228.0C184.10457 228.0 185.0 228.89543 185.0 230.0Z"
+                              fill-rule="nonzero" />
+                            <path fill="#76bf68" clip-path="url(#id_0)"
+                              d="M185.0 332.0L149.0 332.0L149.0 230.0C149.0 228.89543 149.89543 228.0 151.0 228.0L183.0 228.0C184.10457 228.0 185.0 228.89543 185.0 230.0Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#000000" stroke-width="0.0" stroke-linecap="butt" stroke-opacity="0.0" clip-path="url(#id_0)"
+                              d="M240.0 332.0L204.0 332.0L204.0 230.0C204.0 228.89543 204.89543 228.0 206.0 228.0L238.0 228.0C239.10457 228.0 240.0 228.89543 240.0 230.0Z"
+                              fill-rule="nonzero" />
+                            <path fill="#76bf68" clip-path="url(#id_0)"
+                              d="M240.0 332.0L204.0 332.0L204.0 230.0C204.0 228.89543 204.89543 228.0 206.0 228.0L238.0 228.0C239.10457 228.0 240.0 228.89543 240.0 230.0Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#000000" stroke-width="0.0" stroke-linecap="butt" stroke-opacity="0.0" clip-path="url(#id_0)"
+                              d="M296.0 332.0L260.0 332.0L260.0 230.0C260.0 228.89543 260.89542 228.0 262.0 228.0L294.0 228.0C295.10458 228.0 296.0 228.89543 296.0 230.0Z"
+                              fill-rule="nonzero" />
+                            <path fill="#76bf68" clip-path="url(#id_0)"
+                              d="M296.0 332.0L260.0 332.0L260.0 230.0C260.0 228.89543 260.89542 228.0 262.0 228.0L294.0 228.0C295.10458 228.0 296.0 228.89543 296.0 230.0Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#000000" stroke-width="0.0" stroke-linecap="butt" stroke-opacity="0.0" clip-path="url(#id_0)"
+                              d="M351.0 332.0L315.0 332.0L315.0 230.0C315.0 228.89543 315.89542 228.0 317.0 228.0L349.0 228.0C350.10458 228.0 351.0 228.89543 351.0 230.0Z"
+                              fill-rule="nonzero" />
+                            <path fill="#76bf68" clip-path="url(#id_0)"
+                              d="M351.0 332.0L315.0 332.0L315.0 230.0C315.0 228.89543 315.89542 228.0 317.0 228.0L349.0 228.0C350.10458 228.0 351.0 228.89543 351.0 230.0Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#000000" stroke-width="0.0" stroke-linecap="butt" stroke-opacity="0.0" clip-path="url(#id_0)"
+                              d="M407.0 332.0L371.0 332.0L371.0 230.0C371.0 228.89543 371.89542 228.0 373.0 228.0L405.0 228.0C406.10458 228.0 407.0 228.89543 407.0 230.0Z"
+                              fill-rule="nonzero" />
+                            <path fill="#76bf68" clip-path="url(#id_0)"
+                              d="M407.0 332.0L371.0 332.0L371.0 230.0C371.0 228.89543 371.89542 228.0 373.0 228.0L405.0 228.0C406.10458 228.0 407.0 228.89543 407.0 230.0Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#000000" stroke-width="0.0" stroke-linecap="butt" stroke-opacity="0.0" clip-path="url(#id_0)"
+                              d="M462.0 332.0L426.0 332.0L426.0 21.0C426.0 19.89543 426.89542 19.0 428.0 19.0L460.0 19.0C461.10458 19.0 462.0 19.89543 462.0 21.0Z"
+                              fill-rule="nonzero" />
+                            <path fill="#76bf68" clip-path="url(#id_0)"
+                              d="M462.0 332.0L426.0 332.0L426.0 21.0C426.0 19.89543 426.89542 19.0 428.0 19.0L460.0 19.0C461.10458 19.0 462.0 19.89543 462.0 21.0Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#000000" stroke-width="0.0" stroke-linecap="butt" stroke-opacity="0.0" clip-path="url(#id_0)"
+                              d="M518.0 332.0L482.0 332.0L482.0 195.0C482.0 193.89543 482.89542 193.0 484.0 193.0L516.0 193.0C517.10455 193.0 518.0 193.89543 518.0 195.0Z"
+                              fill-rule="nonzero" />
+                            <path fill="#76bf68" clip-path="url(#id_0)"
+                              d="M518.0 332.0L482.0 332.0L482.0 195.0C482.0 193.89543 482.89542 193.0 484.0 193.0L516.0 193.0C517.10455 193.0 518.0 193.89543 518.0 195.0Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#000000" stroke-width="0.0" stroke-linecap="butt" stroke-opacity="0.0" clip-path="url(#id_0)"
+                              d="M573.0 332.0L537.0 332.0L537.0 55.0C537.0 53.89543 537.89545 53.0 539.0 53.0L571.0 53.0C572.10455 53.0 573.0 53.89543 573.0 55.0Z"
+                              fill-rule="nonzero" />
+                            <path fill="#76bf68" clip-path="url(#id_0)"
+                              d="M573.0 332.0L537.0 332.0L537.0 55.0C537.0 53.89543 537.89545 53.0 539.0 53.0L571.0 53.0C572.10455 53.0 573.0 53.89543 573.0 55.0Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#76bf68" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"
+                              d="M60.125 137.64896L57.734375 137.91458Q57.65625 137.1802 57.28125 136.83646Q56.921875 136.47708 56.328125 136.47708Q55.546875 136.47708 55.0 137.1802Q54.46875 137.88333 54.328125 140.10208Q55.25 139.00833 56.609375 139.00833Q58.15625 139.00833 59.265625 140.19583Q60.375 141.3677 60.375 143.22708Q60.375 145.21146 59.203125 146.41458Q58.046875 147.60208 56.234375 147.60208Q54.28125 147.60208 53.015625 146.08646Q51.765625 144.57083 51.765625 141.1177Q51.765625 137.57083 53.078125 136.00833Q54.390625 134.44583 56.46875 134.44583Q57.9375 134.44583 58.90625 135.27396Q59.875 136.08646 60.125 137.64896ZM54.53125 143.03958Q54.53125 144.2427 55.078125 144.89896Q55.640625 145.5552 56.359375 145.5552Q57.03125 145.5552 57.484375 145.02396Q57.953125 144.47708 57.953125 143.25833Q57.953125 142.00833 57.453125 141.4302Q56.96875 140.83646 56.234375 140.83646Q55.515625 140.83646 55.015625 141.39896Q54.53125 141.94583 54.53125 143.03958Z"
+                              fill-rule="nonzero" />
+                            <path fill="#ffffff"
+                              d="M60.125 137.64896L57.734375 137.91458Q57.65625 137.1802 57.28125 136.83646Q56.921875 136.47708 56.328125 136.47708Q55.546875 136.47708 55.0 137.1802Q54.46875 137.88333 54.328125 140.10208Q55.25 139.00833 56.609375 139.00833Q58.15625 139.00833 59.265625 140.19583Q60.375 141.3677 60.375 143.22708Q60.375 145.21146 59.203125 146.41458Q58.046875 147.60208 56.234375 147.60208Q54.28125 147.60208 53.015625 146.08646Q51.765625 144.57083 51.765625 141.1177Q51.765625 137.57083 53.078125 136.00833Q54.390625 134.44583 56.46875 134.44583Q57.9375 134.44583 58.90625 135.27396Q59.875 136.08646 60.125 137.64896ZM54.53125 143.03958Q54.53125 144.2427 55.078125 144.89896Q55.640625 145.5552 56.359375 145.5552Q57.03125 145.5552 57.484375 145.02396Q57.953125 144.47708 57.953125 143.25833Q57.953125 142.00833 57.453125 141.4302Q56.96875 140.83646 56.234375 140.83646Q55.515625 140.83646 55.015625 141.39896Q54.53125 141.94583 54.53125 143.03958Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#76bf68" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"
+                              d="M106.765625 102.08368L106.765625 99.80243L115.21875 99.80243L115.21875 101.58368Q114.171875 102.61493 113.078125 104.55243Q112.0 106.474304 111.4375 108.64618Q110.875 110.80243 110.875 112.505554L108.5 112.505554Q108.5625 109.83368 109.59375 107.05243Q110.640625 104.27118 112.375 102.08368L106.765625 102.08368Z"
+                              fill-rule="nonzero" />
+                            <path fill="#ffffff"
+                              d="M106.765625 102.08368L106.765625 99.80243L115.21875 99.80243L115.21875 101.58368Q114.171875 102.61493 113.078125 104.55243Q112.0 106.474304 111.4375 108.64618Q110.875 110.80243 110.875 112.505554L108.5 112.505554Q108.5625 109.83368 109.59375 107.05243Q110.640625 104.27118 112.375 102.08368L106.765625 102.08368Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#76bf68" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"
+                              d="M162.67188 248.59479L165.0625 248.31354Q165.1875 249.21979 165.6875 249.70416Q166.1875 250.18854 166.89062 250.18854Q167.65625 250.18854 168.17188 249.61041Q168.70312 249.03229 168.70312 248.04791Q168.70312 247.11041 168.20312 246.56354Q167.70312 246.01666 166.98438 246.01666Q166.51562 246.01666 165.84375 246.20416L166.125 244.18854Q167.125 244.21979 167.64062 243.76666Q168.17188 243.29791 168.17188 242.53229Q168.17188 241.87604 167.78125 241.50104Q167.40625 241.11041 166.76562 241.11041Q166.125 241.11041 165.67188 241.54791Q165.23438 241.98541 165.14062 242.82916L162.85938 242.43854Q163.09375 241.28229 163.57812 240.57916Q164.0625 239.87604 164.90625 239.48541Q165.76562 239.07916 166.82812 239.07916Q168.65625 239.07916 169.75 240.23541Q170.65625 241.18854 170.65625 242.37604Q170.65625 244.07916 168.79688 245.09479Q169.90625 245.32916 170.5625 246.15729Q171.23438 246.98541 171.23438 248.14166Q171.23438 249.84479 170.0 251.04791Q168.76562 252.23541 166.90625 252.23541Q165.17188 252.23541 164.01562 251.23541Q162.85938 250.21979 162.67188 248.59479Z"
+                              fill-rule="nonzero" />
+                            <path fill="#ffffff"
+                              d="M162.67188 248.59479L165.0625 248.31354Q165.1875 249.21979 165.6875 249.70416Q166.1875 250.18854 166.89062 250.18854Q167.65625 250.18854 168.17188 249.61041Q168.70312 249.03229 168.70312 248.04791Q168.70312 247.11041 168.20312 246.56354Q167.70312 246.01666 166.98438 246.01666Q166.51562 246.01666 165.84375 246.20416L166.125 244.18854Q167.125 244.21979 167.64062 243.76666Q168.17188 243.29791 168.17188 242.53229Q168.17188 241.87604 167.78125 241.50104Q167.40625 241.11041 166.76562 241.11041Q166.125 241.11041 165.67188 241.54791Q165.23438 241.98541 165.14062 242.82916L162.85938 242.43854Q163.09375 241.28229 163.57812 240.57916Q164.0625 239.87604 164.90625 239.48541Q165.76562 239.07916 166.82812 239.07916Q168.65625 239.07916 169.75 240.23541Q170.65625 241.18854 170.65625 242.37604Q170.65625 244.07916 168.79688 245.09479Q169.90625 245.32916 170.5625 246.15729Q171.23438 246.98541 171.23438 248.14166Q171.23438 249.84479 170.0 251.04791Q168.76562 252.23541 166.90625 252.23541Q165.17188 252.23541 164.01562 251.23541Q162.85938 250.21979 162.67188 248.59479Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#76bf68" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"
+                              d="M217.67188 248.59479L220.0625 248.31354Q220.1875 249.21979 220.6875 249.70416Q221.1875 250.18854 221.89062 250.18854Q222.65625 250.18854 223.17188 249.61041Q223.70312 249.03229 223.70312 248.04791Q223.70312 247.11041 223.20312 246.56354Q222.70312 246.01666 221.98438 246.01666Q221.51562 246.01666 220.84375 246.20416L221.125 244.18854Q222.125 244.21979 222.64062 243.76666Q223.17188 243.29791 223.17188 242.53229Q223.17188 241.87604 222.78125 241.50104Q222.40625 241.11041 221.76562 241.11041Q221.125 241.11041 220.67188 241.54791Q220.23438 241.98541 220.14062 242.82916L217.85938 242.43854Q218.09375 241.28229 218.57812 240.57916Q219.0625 239.87604 219.90625 239.48541Q220.76562 239.07916 221.82812 239.07916Q223.65625 239.07916 224.75 240.23541Q225.65625 241.18854 225.65625 242.37604Q225.65625 244.07916 223.79688 245.09479Q224.90625 245.32916 225.5625 246.15729Q226.23438 246.98541 226.23438 248.14166Q226.23438 249.84479 225.0 251.04791Q223.76562 252.23541 221.90625 252.23541Q220.17188 252.23541 219.01562 251.23541Q217.85938 250.21979 217.67188 248.59479Z"
+                              fill-rule="nonzero" />
+                            <path fill="#ffffff"
+                              d="M217.67188 248.59479L220.0625 248.31354Q220.1875 249.21979 220.6875 249.70416Q221.1875 250.18854 221.89062 250.18854Q222.65625 250.18854 223.17188 249.61041Q223.70312 249.03229 223.70312 248.04791Q223.70312 247.11041 223.20312 246.56354Q222.70312 246.01666 221.98438 246.01666Q221.51562 246.01666 220.84375 246.20416L221.125 244.18854Q222.125 244.21979 222.64062 243.76666Q223.17188 243.29791 223.17188 242.53229Q223.17188 241.87604 222.78125 241.50104Q222.40625 241.11041 221.76562 241.11041Q221.125 241.11041 220.67188 241.54791Q220.23438 241.98541 220.14062 242.82916L217.85938 242.43854Q218.09375 241.28229 218.57812 240.57916Q219.0625 239.87604 219.90625 239.48541Q220.76562 239.07916 221.82812 239.07916Q223.65625 239.07916 224.75 240.23541Q225.65625 241.18854 225.65625 242.37604Q225.65625 244.07916 223.79688 245.09479Q224.90625 245.32916 225.5625 246.15729Q226.23438 246.98541 226.23438 248.14166Q226.23438 249.84479 225.0 251.04791Q223.76562 252.23541 221.90625 252.23541Q220.17188 252.23541 219.01562 251.23541Q217.85938 250.21979 217.67188 248.59479Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#76bf68" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"
+                              d="M273.67188 248.59479L276.0625 248.31354Q276.1875 249.21979 276.6875 249.70416Q277.1875 250.18854 277.89062 250.18854Q278.65625 250.18854 279.17188 249.61041Q279.70312 249.03229 279.70312 248.04791Q279.70312 247.11041 279.20312 246.56354Q278.70312 246.01666 277.98438 246.01666Q277.51562 246.01666 276.84375 246.20416L277.125 244.18854Q278.125 244.21979 278.64062 243.76666Q279.17188 243.29791 279.17188 242.53229Q279.17188 241.87604 278.78125 241.50104Q278.40625 241.11041 277.76562 241.11041Q277.125 241.11041 276.67188 241.54791Q276.23438 241.98541 276.14062 242.82916L273.85938 242.43854Q274.09375 241.28229 274.57812 240.57916Q275.0625 239.87604 275.90625 239.48541Q276.76562 239.07916 277.82812 239.07916Q279.65625 239.07916 280.75 240.23541Q281.65625 241.18854 281.65625 242.37604Q281.65625 244.07916 279.79688 245.09479Q280.90625 245.32916 281.5625 246.15729Q282.23438 246.98541 282.23438 248.14166Q282.23438 249.84479 281.0 251.04791Q279.76562 252.23541 277.90625 252.23541Q276.17188 252.23541 275.01562 251.23541Q273.85938 250.21979 273.67188 248.59479Z"
+                              fill-rule="nonzero" />
+                            <path fill="#ffffff"
+                              d="M273.67188 248.59479L276.0625 248.31354Q276.1875 249.21979 276.6875 249.70416Q277.1875 250.18854 277.89062 250.18854Q278.65625 250.18854 279.17188 249.61041Q279.70312 249.03229 279.70312 248.04791Q279.70312 247.11041 279.20312 246.56354Q278.70312 246.01666 277.98438 246.01666Q277.51562 246.01666 276.84375 246.20416L277.125 244.18854Q278.125 244.21979 278.64062 243.76666Q279.17188 243.29791 279.17188 242.53229Q279.17188 241.87604 278.78125 241.50104Q278.40625 241.11041 277.76562 241.11041Q277.125 241.11041 276.67188 241.54791Q276.23438 241.98541 276.14062 242.82916L273.85938 242.43854Q274.09375 241.28229 274.57812 240.57916Q275.0625 239.87604 275.90625 239.48541Q276.76562 239.07916 277.82812 239.07916Q279.65625 239.07916 280.75 240.23541Q281.65625 241.18854 281.65625 242.37604Q281.65625 244.07916 279.79688 245.09479Q280.90625 245.32916 281.5625 246.15729Q282.23438 246.98541 282.23438 248.14166Q282.23438 249.84479 281.0 251.04791Q279.76562 252.23541 277.90625 252.23541Q276.17188 252.23541 275.01562 251.23541Q273.85938 250.21979 273.67188 248.59479Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#76bf68" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"
+                              d="M328.67188 248.59479L331.0625 248.31354Q331.1875 249.21979 331.6875 249.70416Q332.1875 250.18854 332.89062 250.18854Q333.65625 250.18854 334.17188 249.61041Q334.70312 249.03229 334.70312 248.04791Q334.70312 247.11041 334.20312 246.56354Q333.70312 246.01666 332.98438 246.01666Q332.51562 246.01666 331.84375 246.20416L332.125 244.18854Q333.125 244.21979 333.64062 243.76666Q334.17188 243.29791 334.17188 242.53229Q334.17188 241.87604 333.78125 241.50104Q333.40625 241.11041 332.76562 241.11041Q332.125 241.11041 331.67188 241.54791Q331.23438 241.98541 331.14062 242.82916L328.85938 242.43854Q329.09375 241.28229 329.57812 240.57916Q330.0625 239.87604 330.90625 239.48541Q331.76562 239.07916 332.82812 239.07916Q334.65625 239.07916 335.75 240.23541Q336.65625 241.18854 336.65625 242.37604Q336.65625 244.07916 334.79688 245.09479Q335.90625 245.32916 336.5625 246.15729Q337.23438 246.98541 337.23438 248.14166Q337.23438 249.84479 336.0 251.04791Q334.76562 252.23541 332.90625 252.23541Q331.17188 252.23541 330.01562 251.23541Q328.85938 250.21979 328.67188 248.59479Z"
+                              fill-rule="nonzero" />
+                            <path fill="#ffffff"
+                              d="M328.67188 248.59479L331.0625 248.31354Q331.1875 249.21979 331.6875 249.70416Q332.1875 250.18854 332.89062 250.18854Q333.65625 250.18854 334.17188 249.61041Q334.70312 249.03229 334.70312 248.04791Q334.70312 247.11041 334.20312 246.56354Q333.70312 246.01666 332.98438 246.01666Q332.51562 246.01666 331.84375 246.20416L332.125 244.18854Q333.125 244.21979 333.64062 243.76666Q334.17188 243.29791 334.17188 242.53229Q334.17188 241.87604 333.78125 241.50104Q333.40625 241.11041 332.76562 241.11041Q332.125 241.11041 331.67188 241.54791Q331.23438 241.98541 331.14062 242.82916L328.85938 242.43854Q329.09375 241.28229 329.57812 240.57916Q330.0625 239.87604 330.90625 239.48541Q331.76562 239.07916 332.82812 239.07916Q334.65625 239.07916 335.75 240.23541Q336.65625 241.18854 336.65625 242.37604Q336.65625 244.07916 334.79688 245.09479Q335.90625 245.32916 336.5625 246.15729Q337.23438 246.98541 337.23438 248.14166Q337.23438 249.84479 336.0 251.04791Q334.76562 252.23541 332.90625 252.23541Q331.17188 252.23541 330.01562 251.23541Q328.85938 250.21979 328.67188 248.59479Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#76bf68" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"
+                              d="M384.67188 248.59479L387.0625 248.31354Q387.1875 249.21979 387.6875 249.70416Q388.1875 250.18854 388.89062 250.18854Q389.65625 250.18854 390.17188 249.61041Q390.70312 249.03229 390.70312 248.04791Q390.70312 247.11041 390.20312 246.56354Q389.70312 246.01666 388.98438 246.01666Q388.51562 246.01666 387.84375 246.20416L388.125 244.18854Q389.125 244.21979 389.64062 243.76666Q390.17188 243.29791 390.17188 242.53229Q390.17188 241.87604 389.78125 241.50104Q389.40625 241.11041 388.76562 241.11041Q388.125 241.11041 387.67188 241.54791Q387.23438 241.98541 387.14062 242.82916L384.85938 242.43854Q385.09375 241.28229 385.57812 240.57916Q386.0625 239.87604 386.90625 239.48541Q387.76562 239.07916 388.82812 239.07916Q390.65625 239.07916 391.75 240.23541Q392.65625 241.18854 392.65625 242.37604Q392.65625 244.07916 390.79688 245.09479Q391.90625 245.32916 392.5625 246.15729Q393.23438 246.98541 393.23438 248.14166Q393.23438 249.84479 392.0 251.04791Q390.76562 252.23541 388.90625 252.23541Q387.17188 252.23541 386.01562 251.23541Q384.85938 250.21979 384.67188 248.59479Z"
+                              fill-rule="nonzero" />
+                            <path fill="#ffffff"
+                              d="M384.67188 248.59479L387.0625 248.31354Q387.1875 249.21979 387.6875 249.70416Q388.1875 250.18854 388.89062 250.18854Q389.65625 250.18854 390.17188 249.61041Q390.70312 249.03229 390.70312 248.04791Q390.70312 247.11041 390.20312 246.56354Q389.70312 246.01666 388.98438 246.01666Q388.51562 246.01666 387.84375 246.20416L388.125 244.18854Q389.125 244.21979 389.64062 243.76666Q390.17188 243.29791 390.17188 242.53229Q390.17188 241.87604 389.78125 241.50104Q389.40625 241.11041 388.76562 241.11041Q388.125 241.11041 387.67188 241.54791Q387.23438 241.98541 387.14062 242.82916L384.85938 242.43854Q385.09375 241.28229 385.57812 240.57916Q386.0625 239.87604 386.90625 239.48541Q387.76562 239.07916 388.82812 239.07916Q390.65625 239.07916 391.75 240.23541Q392.65625 241.18854 392.65625 242.37604Q392.65625 244.07916 390.79688 245.09479Q391.90625 245.32916 392.5625 246.15729Q393.23438 246.98541 393.23438 248.14166Q393.23438 249.84479 392.0 251.04791Q390.76562 252.23541 388.90625 252.23541Q387.17188 252.23541 386.01562 251.23541Q384.85938 250.21979 384.67188 248.59479Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#76bf68" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"
+                              d="M439.8125 39.765625L442.20312 39.5Q442.29688 40.234375 442.65625 40.59375Q443.03125 40.9375 443.64062 40.9375Q444.40625 40.9375 444.9375 40.234375Q445.48438 39.53125 445.625 37.3125Q444.70312 38.40625 443.29688 38.40625Q441.78125 38.40625 440.67188 37.234375Q439.57812 36.046875 439.57812 34.171875Q439.57812 32.21875 440.73438 31.015625Q441.90625 29.8125 443.70312 29.8125Q445.65625 29.8125 446.90625 31.328125Q448.17188 32.84375 448.17188 36.3125Q448.17188 39.84375 446.85938 41.421875Q445.5625 42.984375 443.45312 42.984375Q441.9375 42.984375 441.0 42.1875Q440.07812 41.375 439.8125 39.765625ZM445.40625 34.375Q445.40625 33.171875 444.85938 32.515625Q444.3125 31.859375 443.59375 31.859375Q442.90625 31.859375 442.45312 32.40625Q442.0 32.9375 442.0 34.171875Q442.0 35.421875 442.48438 36.015625Q442.98438 36.59375 443.71875 36.59375Q444.4375 36.59375 444.92188 36.03125Q445.40625 35.46875 445.40625 34.375Z"
+                              fill-rule="nonzero" />
+                            <path fill="#ffffff"
+                              d="M439.8125 39.765625L442.20312 39.5Q442.29688 40.234375 442.65625 40.59375Q443.03125 40.9375 443.64062 40.9375Q444.40625 40.9375 444.9375 40.234375Q445.48438 39.53125 445.625 37.3125Q444.70312 38.40625 443.29688 38.40625Q441.78125 38.40625 440.67188 37.234375Q439.57812 36.046875 439.57812 34.171875Q439.57812 32.21875 440.73438 31.015625Q441.90625 29.8125 443.70312 29.8125Q445.65625 29.8125 446.90625 31.328125Q448.17188 32.84375 448.17188 36.3125Q448.17188 39.84375 446.85938 41.421875Q445.5625 42.984375 443.45312 42.984375Q441.9375 42.984375 441.0 42.1875Q440.07812 41.375 439.8125 39.765625ZM445.40625 34.375Q445.40625 33.171875 444.85938 32.515625Q444.3125 31.859375 443.59375 31.859375Q442.90625 31.859375 442.45312 32.40625Q442.0 32.9375 442.0 34.171875Q442.0 35.421875 442.48438 36.015625Q442.98438 36.59375 443.71875 36.59375Q444.4375 36.59375 444.92188 36.03125Q445.40625 35.46875 445.40625 34.375Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#76bf68" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"
+                              d="M500.60938 217.13889L500.60938 214.54514L495.32812 214.54514L495.32812 212.38889L500.92188 204.20139L503.0 204.20139L503.0 212.37326L504.59375 212.37326L504.59375 214.54514L503.0 214.54514L503.0 217.13889L500.60938 217.13889ZM500.60938 212.37326L500.60938 207.96701L497.64062 212.37326L500.60938 212.37326Z"
+                              fill-rule="nonzero" />
+                            <path fill="#ffffff"
+                              d="M500.60938 217.13889L500.60938 214.54514L495.32812 214.54514L495.32812 212.38889L500.92188 204.20139L503.0 204.20139L503.0 212.37326L504.59375 212.37326L504.59375 214.54514L503.0 214.54514L503.0 217.13889L500.60938 217.13889ZM500.60938 212.37326L500.60938 207.96701L497.64062 212.37326L500.60938 212.37326Z"
+                              fill-rule="nonzero" />
+                            <path stroke="#76bf68" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round"
+                              d="M552.8906 70.67465Q551.9219 70.2684 551.4844 69.56528Q551.0625 68.86215 551.0625 68.0184Q551.0625 66.56528 552.0625 65.62778Q553.0625 64.69028 554.9219 64.69028Q556.7656 64.69028 557.78125 65.62778Q558.7969 66.56528 558.7969 68.0184Q558.7969 68.90903 558.3281 69.61215Q557.8594 70.29965 557.0156 70.67465Q558.09375 71.11215 558.6406 71.94028Q559.2031 72.75278 559.2031 73.84653Q559.2031 75.62778 558.0625 76.75278Q556.9219 77.86215 555.03125 77.86215Q553.28125 77.86215 552.1094 76.94028Q550.7344 75.84653 550.7344 73.94028Q550.7344 72.8934 551.25 72.0184Q551.7656 71.1434 552.8906 70.67465ZM553.3906 68.19028Q553.3906 68.92465 553.8125 69.34653Q554.2344 69.75278 554.9219 69.75278Q555.625 69.75278 556.0469 69.34653Q556.46875 68.92465 556.46875 68.17465Q556.46875 67.48715 556.0469 67.06528Q555.6406 66.6434 554.9531 66.6434Q554.2344 66.6434 553.8125 67.06528Q553.3906 67.48715 553.3906 68.19028ZM553.1719 73.7059Q553.1719 74.72153 553.6875 75.29965Q554.2031 75.86215 555.0 75.86215Q555.75 75.86215 556.25 75.31528Q556.7656 74.7684 556.7656 73.73715Q556.7656 72.8309 556.25 72.28403Q555.7344 71.73715 554.9531 71.73715Q554.0469 71.73715 553.6094 72.36215Q553.1719 72.97153 553.1719 73.7059Z"
+                              fill-rule="nonzero" />
+                            <path fill="#ffffff"
+                              d="M552.8906 70.67465Q551.9219 70.2684 551.4844 69.56528Q551.0625 68.86215 551.0625 68.0184Q551.0625 66.56528 552.0625 65.62778Q553.0625 64.69028 554.9219 64.69028Q556.7656 64.69028 557.78125 65.62778Q558.7969 66.56528 558.7969 68.0184Q558.7969 68.90903 558.3281 69.61215Q557.8594 70.29965 557.0156 70.67465Q558.09375 71.11215 558.6406 71.94028Q559.2031 72.75278 559.2031 73.84653Q559.2031 75.62778 558.0625 76.75278Q556.9219 77.86215 555.03125 77.86215Q553.28125 77.86215 552.1094 76.94028Q550.7344 75.84653 550.7344 73.94028Q550.7344 72.8934 551.25 72.0184Q551.7656 71.1434 552.8906 70.67465ZM553.3906 68.19028Q553.3906 68.92465 553.8125 69.34653Q554.2344 69.75278 554.9219 69.75278Q555.625 69.75278 556.0469 69.34653Q556.46875 68.92465 556.46875 68.17465Q556.46875 67.48715 556.0469 67.06528Q555.6406 66.6434 554.9531 66.6434Q554.2344 66.6434 553.8125 67.06528Q553.3906 67.48715 553.3906 68.19028ZM553.1719 73.7059Q553.1719 74.72153 553.6875 75.29965Q554.2031 75.86215 555.0 75.86215Q555.75 75.86215 556.25 75.31528Q556.7656 74.7684 556.7656 73.73715Q556.7656 72.8309 556.25 72.28403Q555.7344 71.73715 554.9531 71.73715Q554.0469 71.73715 553.6094 72.36215Q553.1719 72.97153 553.1719 73.7059Z"
+                              fill-rule="nonzero" />
+                            <path fill="#000000"
+                              d="M48.025135 348.4344L48.025135 349.45L42.337635 349.45Q42.337635 349.075 42.462635 348.71564Q42.681385 348.1375 43.150135 347.575Q43.63451 347.0125 44.54076 346.27814Q45.94701 345.1219 46.431385 344.45Q46.931385 343.77814 46.931385 343.1844Q46.931385 342.5594 46.47826 342.1375Q46.025135 341.7 45.306385 341.7Q44.54076 341.7 44.087635 342.15314Q43.63451 342.60626 43.618885 343.41876L42.54076 343.3094Q42.650135 342.09064 43.368885 341.46564Q44.10326 340.825 45.337635 340.825Q46.57201 340.825 47.29076 341.5125Q48.00951 342.2 48.00951 343.21564Q48.00951 343.73126 47.79076 344.23126Q47.587635 344.71564 47.087635 345.27814Q46.60326 345.825 45.47826 346.77814Q44.525135 347.575 44.243885 347.8719Q43.97826 348.15314 43.806385 348.4344L48.025135 348.4344ZM49.47826 345.21564Q49.47826 343.6844 49.79076 342.7625Q50.10326 341.825 50.712635 341.325Q51.337635 340.825 52.275135 340.825Q52.962635 340.825 53.47826 341.10626Q54.00951 341.3875 54.35326 341.91876Q54.69701 342.4344 54.88451 343.1844Q55.07201 343.9344 55.07201 345.21564Q55.07201 346.73126 54.75951 347.65314Q54.462635 348.575 53.837635 349.09064Q53.22826 349.59064 52.275135 349.59064Q51.04076 349.59064 50.32201 348.7Q49.47826 347.6375 49.47826 345.21564ZM50.556385 345.21564Q50.556385 347.325 51.056385 348.02814Q51.556385 348.73126 52.275135 348.73126Q53.00951 348.73126 53.493885 348.02814Q53.993885 347.325 53.993885 345.21564Q53.993885 343.09064 53.493885 342.40314Q53.00951 341.7 52.25951 341.7Q51.54076 341.7 51.10326 342.3094Q50.556385 343.09064 50.556385 345.21564ZM56.47826 345.21564Q56.47826 343.6844 56.79076 342.7625Q57.10326 341.825 57.712635 341.325Q58.337635 340.825 59.275135 340.825Q59.962635 340.825 60.47826 341.10626Q61.00951 341.3875 61.35326 341.91876Q61.69701 342.4344 61.88451 343.1844Q62.07201 343.9344 62.07201 345.21564Q62.07201 346.73126 61.75951 347.65314Q61.462635 348.575 60.837635 349.09064Q60.22826 349.59064 59.275135 349.59064Q58.04076 349.59064 57.32201 348.7Q56.47826 347.6375 56.47826 345.21564ZM57.556385 345.21564Q57.556385 347.325 58.056385 348.02814Q58.556385 348.73126 59.275135 348.73126Q60.00951 348.73126 60.493885 348.02814Q60.993885 347.325 60.993885 345.21564Q60.993885 343.09064 60.493885 342.40314Q60.00951 341.7 59.25951 341.7Q58.54076 341.7 58.10326 342.3094Q57.556385 343.09064 57.556385 345.21564ZM63.63451 347.46564L64.65013 347.3719Q64.77513 348.09064 65.13451 348.41876Q65.50951 348.73126 66.07201 348.73126Q66.55638 348.73126 66.91576 348.5125Q67.29076 348.27814 67.52513 347.91876Q67.75951 347.54376 67.91576 346.91876Q68.07201 346.27814 68.07201 345.6219Q68.07201 345.54376 68.07201 345.40314Q67.75951 345.90314 67.21263 346.23126Q66.66576 346.54376 66.02513 346.54376Q64.94701 346.54376 64.21263 345.77814Q63.47826 344.9969 63.47826 343.73126Q63.47826 342.41876 64.24388 341.6219Q65.02513 340.825 66.18138 340.825Q67.00951 340.825 67.69701 341.27814Q68.40013 341.73126 68.75951 342.575Q69.11888 343.40314 69.11888 344.98126Q69.11888 346.6219 68.75951 347.60626Q68.41576 348.575 67.69701 349.09064Q66.99388 349.59064 66.05638 349.59064Q65.04076 349.59064 64.40013 349.04376Q63.75951 348.48126 63.63451 347.46564ZM67.94701 343.66876Q67.94701 342.7625 67.46263 342.23126Q66.99388 341.7 66.30638 341.7Q65.60326 341.7 65.07201 342.27814Q64.55638 342.84064 64.55638 343.7625Q64.55638 344.575 65.05638 345.09064Q65.55638 345.60626 66.27513 345.60626Q67.00951 345.60626 67.47826 345.09064Q67.94701 344.575 67.94701 343.66876Z"
+                              fill-rule="nonzero" />
+                            <path fill="#000000"
+                              d="M103.47441 348.4344L103.47441 349.45L97.78691 349.45Q97.78691 349.075 97.91191 348.71564Q98.13066 348.1375 98.59941 347.575Q99.083786 347.0125 99.990036 346.27814Q101.396286 345.1219 101.88066 344.45Q102.38066 343.77814 102.38066 343.1844Q102.38066 342.5594 101.927536 342.1375Q101.47441 341.7 100.75566 341.7Q99.990036 341.7 99.53691 342.15314Q99.083786 342.60626 99.06816 343.41876L97.990036 343.3094Q98.09941 342.09064 98.81816 341.46564Q99.552536 340.825 100.78691 340.825Q102.021286 340.825 102.740036 341.5125Q103.458786 342.2 103.458786 343.21564Q103.458786 343.73126 103.240036 344.23126Q103.03691 344.71564 102.53691 345.27814Q102.052536 345.825 100.927536 346.77814Q99.97441 347.575 99.69316 347.8719Q99.427536 348.15314 99.25566 348.4344L103.47441 348.4344ZM104.927536 345.21564Q104.927536 343.6844 105.240036 342.7625Q105.552536 341.825 106.16191 341.325Q106.78691 340.825 107.72441 340.825Q108.41191 340.825 108.927536 341.10626Q109.458786 341.3875 109.802536 341.91876Q110.146286 342.4344 110.333786 343.1844Q110.521286 343.9344 110.521286 345.21564Q110.521286 346.73126 110.208786 347.65314Q109.91191 348.575 109.28691 349.09064Q108.677536 349.59064 107.72441 349.59064Q106.490036 349.59064 105.771286 348.7Q104.927536 347.6375 104.927536 345.21564ZM106.00566 345.21564Q106.00566 347.325 106.50566 348.02814Q107.00566 348.73126 107.72441 348.73126Q108.458786 348.73126 108.94316 348.02814Q109.44316 347.325 109.44316 345.21564Q109.44316 343.09064 108.94316 342.40314Q108.458786 341.7 107.708786 341.7Q106.990036 341.7 106.552536 342.3094Q106.00566 343.09064 106.00566 345.21564ZM115.896286 349.45L114.84941 349.45L114.84941 342.73126Q114.458786 343.09064 113.833786 343.46564Q113.22441 343.825 112.740036 343.9969L112.740036 342.98126Q113.615036 342.5594 114.271286 341.98126Q114.94316 341.3875 115.22441 340.825L115.896286 340.825L115.896286 349.45ZM118.927536 345.21564Q118.927536 343.6844 119.240036 342.7625Q119.552536 341.825 120.16191 341.325Q120.78691 340.825 121.72441 340.825Q122.41191 340.825 122.927536 341.10626Q123.458786 341.3875 123.802536 341.91876Q124.146286 342.4344 124.333786 343.1844Q124.521286 343.9344 124.521286 345.21564Q124.521286 346.73126 124.208786 347.65314Q123.91191 348.575 123.28691 349.09064Q122.677536 349.59064 121.72441 349.59064Q120.490036 349.59064 119.771286 348.7Q118.927536 347.6375 118.927536 345.21564ZM120.00566 345.21564Q120.00566 347.325 120.50566 348.02814Q121.00566 348.73126 121.72441 348.73126Q122.458786 348.73126 122.94316 348.02814Q123.44316 347.325 123.44316 345.21564Q123.44316 343.09064 122.94316 342.40314Q122.458786 341.7 121.708786 341.7Q120.990036 341.7 120.552536 342.3094Q120.00566 343.09064 120.00566 345.21564Z"
+                              fill-rule="nonzero" />
+                            <path fill="#000000"
+                              d="M158.92369 348.4344L158.92369 349.45L153.23619 349.45Q153.23619 349.075 153.36119 348.71564Q153.57994 348.1375 154.04869 347.575Q154.53307 347.0125 155.43932 346.27814Q156.84557 345.1219 157.32994 344.45Q157.82994 343.77814 157.82994 343.1844Q157.82994 342.5594 157.37682 342.1375Q156.92369 341.7 156.20494 341.7Q155.43932 341.7 154.98619 342.15314Q154.53307 342.60626 154.51744 343.41876L153.43932 343.3094Q153.54869 342.09064 154.26744 341.46564Q155.00182 340.825 156.23619 340.825Q157.47057 340.825 158.18932 341.5125Q158.90807 342.2 158.90807 343.21564Q158.90807 343.73126 158.68932 344.23126Q158.48619 344.71564 157.98619 345.27814Q157.50182 345.825 156.37682 346.77814Q155.42369 347.575 155.14244 347.8719Q154.87682 348.15314 154.70494 348.4344L158.92369 348.4344ZM160.37682 345.21564Q160.37682 343.6844 160.68932 342.7625Q161.00182 341.825 161.61119 341.325Q162.23619 340.825 163.17369 340.825Q163.86119 340.825 164.37682 341.10626Q164.90807 341.3875 165.25182 341.91876Q165.59557 342.4344 165.78307 343.1844Q165.97057 343.9344 165.97057 345.21564Q165.97057 346.73126 165.65807 347.65314Q165.36119 348.575 164.73619 349.09064Q164.12682 349.59064 163.17369 349.59064Q161.93932 349.59064 161.22057 348.7Q160.37682 347.6375 160.37682 345.21564ZM161.45494 345.21564Q161.45494 347.325 161.95494 348.02814Q162.45494 348.73126 163.17369 348.73126Q163.90807 348.73126 164.39244 348.02814Q164.89244 347.325 164.89244 345.21564Q164.89244 343.09064 164.39244 342.40314Q163.90807 341.7 163.15807 341.7Q162.43932 341.7 162.00182 342.3094Q161.45494 343.09064 161.45494 345.21564ZM171.34557 349.45L170.29869 349.45L170.29869 342.73126Q169.90807 343.09064 169.28307 343.46564Q168.67369 343.825 168.18932 343.9969L168.18932 342.98126Q169.06432 342.5594 169.72057 341.98126Q170.39244 341.3875 170.67369 340.825L171.34557 340.825L171.34557 349.45ZM178.34557 349.45L177.29869 349.45L177.29869 342.73126Q176.90807 343.09064 176.28307 343.46564Q175.67369 343.825 175.18932 343.9969L175.18932 342.98126Q176.06432 342.5594 176.72057 341.98126Q177.39244 341.3875 177.67369 340.825L178.34557 340.825L178.34557 349.45Z"
+                              fill-rule="nonzero" />
+                            <path fill="#000000"
+                              d="M214.37296 348.4344L214.37296 349.45L208.68546 349.45Q208.68546 349.075 208.81046 348.71564Q209.0292 348.1375 209.49796 347.575Q209.98233 347.0125 210.88858 346.27814Q212.29483 345.1219 212.7792 344.45Q213.2792 343.77814 213.2792 343.1844Q213.2792 342.5594 212.82608 342.1375Q212.37296 341.7 211.6542 341.7Q210.88858 341.7 210.43546 342.15314Q209.98233 342.60626 209.9667 343.41876L208.88858 343.3094Q208.99796 342.09064 209.7167 341.46564Q210.45108 340.825 211.68546 340.825Q212.91983 340.825 213.63858 341.5125Q214.35733 342.2 214.35733 343.21564Q214.35733 343.73126 214.13858 344.23126Q213.93546 344.71564 213.43546 345.27814Q212.95108 345.825 211.82608 346.77814Q210.87296 347.575 210.5917 347.8719Q210.32608 348.15314 210.1542 348.4344L214.37296 348.4344ZM215.82608 345.21564Q215.82608 343.6844 216.13858 342.7625Q216.45108 341.825 217.06046 341.325Q217.68546 340.825 218.62296 340.825Q219.31046 340.825 219.82608 341.10626Q220.35733 341.3875 220.70108 341.91876Q221.04483 342.4344 221.23233 343.1844Q221.41983 343.9344 221.41983 345.21564Q221.41983 346.73126 221.10733 347.65314Q220.81046 348.575 220.18546 349.09064Q219.57608 349.59064 218.62296 349.59064Q217.38858 349.59064 216.66983 348.7Q215.82608 347.6375 215.82608 345.21564ZM216.9042 345.21564Q216.9042 347.325 217.4042 348.02814Q217.9042 348.73126 218.62296 348.73126Q219.35733 348.73126 219.8417 348.02814Q220.3417 347.325 220.3417 345.21564Q220.3417 343.09064 219.8417 342.40314Q219.35733 341.7 218.60733 341.7Q217.88858 341.7 217.45108 342.3094Q216.9042 343.09064 216.9042 345.21564ZM226.79483 349.45L225.74796 349.45L225.74796 342.73126Q225.35733 343.09064 224.73233 343.46564Q224.12296 343.825 223.63858 343.9969L223.63858 342.98126Q224.51358 342.5594 225.16983 341.98126Q225.8417 341.3875 226.12296 340.825L226.79483 340.825L226.79483 349.45ZM235.37296 348.4344L235.37296 349.45L229.68546 349.45Q229.68546 349.075 229.81046 348.71564Q230.0292 348.1375 230.49796 347.575Q230.98233 347.0125 231.88858 346.27814Q233.29483 345.1219 233.7792 344.45Q234.2792 343.77814 234.2792 343.1844Q234.2792 342.5594 233.82608 342.1375Q233.37296 341.7 232.6542 341.7Q231.88858 341.7 231.43546 342.15314Q230.98233 342.60626 230.9667 343.41876L229.88858 343.3094Q229.99796 342.09064 230.7167 341.46564Q231.45108 340.825 232.68546 340.825Q233.91983 340.825 234.63858 341.5125Q235.35733 342.2 235.35733 343.21564Q235.35733 343.73126 235.13858 344.23126Q234.93546 344.71564 234.43546 345.27814Q233.95108 345.825 232.82608 346.77814Q231.87296 347.575 231.5917 347.8719Q231.32608 348.15314 231.1542 348.4344L235.37296 348.4344Z"
+                              fill-rule="nonzero" />
+                            <path fill="#000000"
+                              d="M269.82224 348.4344L269.82224 349.45L264.13474 349.45Q264.13474 349.075 264.25974 348.71564Q264.4785 348.1375 264.94724 347.575Q265.4316 347.0125 266.33786 346.27814Q267.7441 345.1219 268.2285 344.45Q268.7285 343.77814 268.7285 343.1844Q268.7285 342.5594 268.27536 342.1375Q267.82224 341.7 267.1035 341.7Q266.33786 341.7 265.88474 342.15314Q265.4316 342.60626 265.416 343.41876L264.33786 343.3094Q264.44724 342.09064 265.166 341.46564Q265.90036 340.825 267.13474 340.825Q268.3691 340.825 269.08786 341.5125Q269.8066 342.2 269.8066 343.21564Q269.8066 343.73126 269.58786 344.23126Q269.38474 344.71564 268.88474 345.27814Q268.40036 345.825 267.27536 346.77814Q266.32224 347.575 266.041 347.8719Q265.77536 348.15314 265.6035 348.4344L269.82224 348.4344ZM271.27536 345.21564Q271.27536 343.6844 271.58786 342.7625Q271.90036 341.825 272.50974 341.325Q273.13474 340.825 274.07224 340.825Q274.75974 340.825 275.27536 341.10626Q275.8066 341.3875 276.15036 341.91876Q276.4941 342.4344 276.6816 343.1844Q276.8691 343.9344 276.8691 345.21564Q276.8691 346.73126 276.5566 347.65314Q276.25974 348.575 275.63474 349.09064Q275.02536 349.59064 274.07224 349.59064Q272.83786 349.59064 272.1191 348.7Q271.27536 347.6375 271.27536 345.21564ZM272.3535 345.21564Q272.3535 347.325 272.8535 348.02814Q273.3535 348.73126 274.07224 348.73126Q274.8066 348.73126 275.291 348.02814Q275.791 347.325 275.791 345.21564Q275.791 343.09064 275.291 342.40314Q274.8066 341.7 274.0566 341.7Q273.33786 341.7 272.90036 342.3094Q272.3535 343.09064 272.3535 345.21564ZM282.2441 349.45L281.19724 349.45L281.19724 342.73126Q280.8066 343.09064 280.1816 343.46564Q279.57224 343.825 279.08786 343.9969L279.08786 342.98126Q279.96286 342.5594 280.6191 341.98126Q281.291 341.3875 281.57224 340.825L282.2441 340.825L282.2441 349.45ZM285.27536 347.1844L286.33786 347.04376Q286.50974 347.9344 286.94724 348.34064Q287.38474 348.73126 288.00974 348.73126Q288.75974 348.73126 289.27536 348.21564Q289.791 347.7 289.791 346.9344Q289.791 346.21564 289.3066 345.7469Q288.83786 345.2625 288.1035 345.2625Q287.8066 345.2625 287.3535 345.3875L287.4785 344.45Q287.58786 344.46564 287.65036 344.46564Q288.32224 344.46564 288.8535 344.1219Q289.40036 343.7625 289.40036 343.02814Q289.40036 342.45 289.00974 342.075Q288.6191 341.6844 287.9941 341.6844Q287.38474 341.6844 286.96286 342.075Q286.5566 342.46564 286.44724 343.23126L285.38474 343.04376Q285.57224 341.9969 286.25974 341.41876Q286.94724 340.825 287.96286 340.825Q288.666 340.825 289.25974 341.1375Q289.8535 341.4344 290.166 341.95Q290.4785 342.46564 290.4785 343.0594Q290.4785 343.60626 290.1816 344.075Q289.88474 344.52814 289.3066 344.79376Q290.0566 344.96564 290.4785 345.52814Q290.90036 346.075 290.90036 346.91876Q290.90036 348.04376 290.07224 348.825Q289.25974 349.60626 288.00974 349.60626Q286.88474 349.60626 286.13474 348.9344Q285.38474 348.2469 285.27536 347.1844Z"
+                              fill-rule="nonzero" />
+                            <path fill="#000000"
+                              d="M325.2715 348.4344L325.2715 349.45L319.584 349.45Q319.584 349.075 319.709 348.71564Q319.92776 348.1375 320.3965 347.575Q320.8809 347.0125 321.78714 346.27814Q323.1934 345.1219 323.67776 344.45Q324.17776 343.77814 324.17776 343.1844Q324.17776 342.5594 323.72464 342.1375Q323.2715 341.7 322.55276 341.7Q321.78714 341.7 321.334 342.15314Q320.8809 342.60626 320.86526 343.41876L319.78714 343.3094Q319.8965 342.09064 320.61526 341.46564Q321.34964 340.825 322.584 340.825Q323.8184 340.825 324.53714 341.5125Q325.2559 342.2 325.2559 343.21564Q325.2559 343.73126 325.03714 344.23126Q324.834 344.71564 324.334 345.27814Q323.84964 345.825 322.72464 346.77814Q321.7715 347.575 321.49026 347.8719Q321.22464 348.15314 321.05276 348.4344L325.2715 348.4344ZM326.72464 345.21564Q326.72464 343.6844 327.03714 342.7625Q327.34964 341.825 327.959 341.325Q328.584 340.825 329.5215 340.825Q330.209 340.825 330.72464 341.10626Q331.2559 341.3875 331.59964 341.91876Q331.9434 342.4344 332.1309 343.1844Q332.3184 343.9344 332.3184 345.21564Q332.3184 346.73126 332.0059 347.65314Q331.709 348.575 331.084 349.09064Q330.47464 349.59064 329.5215 349.59064Q328.28714 349.59064 327.5684 348.7Q326.72464 347.6375 326.72464 345.21564ZM327.80276 345.21564Q327.80276 347.325 328.30276 348.02814Q328.80276 348.73126 329.5215 348.73126Q330.2559 348.73126 330.74026 348.02814Q331.24026 347.325 331.24026 345.21564Q331.24026 343.09064 330.74026 342.40314Q330.2559 341.7 329.5059 341.7Q328.78714 341.7 328.34964 342.3094Q327.80276 343.09064 327.80276 345.21564ZM337.6934 349.45L336.6465 349.45L336.6465 342.73126Q336.2559 343.09064 335.6309 343.46564Q335.0215 343.825 334.53714 343.9969L334.53714 342.98126Q335.41214 342.5594 336.0684 341.98126Q336.74026 341.3875 337.0215 340.825L337.6934 340.825L337.6934 349.45ZM344.09964 349.45L344.09964 347.3875L340.3809 347.3875L340.3809 346.41876L344.30276 340.85626L345.16214 340.85626L345.16214 346.41876L346.3184 346.41876L346.3184 347.3875L345.16214 347.3875L345.16214 349.45L344.09964 349.45ZM344.09964 346.41876L344.09964 342.5594L341.41214 346.41876L344.09964 346.41876Z"
+                              fill-rule="nonzero" />
+                            <path fill="#000000"
+                              d="M380.7208 348.4344L380.7208 349.45L375.0333 349.45Q375.0333 349.075 375.1583 348.71564Q375.37704 348.1375 375.8458 347.575Q376.33017 347.0125 377.23642 346.27814Q378.64267 345.1219 379.12704 344.45Q379.62704 343.77814 379.62704 343.1844Q379.62704 342.5594 379.17392 342.1375Q378.7208 341.7 378.00204 341.7Q377.23642 341.7 376.7833 342.15314Q376.33017 342.60626 376.31454 343.41876L375.23642 343.3094Q375.3458 342.09064 376.06454 341.46564Q376.79892 340.825 378.0333 340.825Q379.26767 340.825 379.98642 341.5125Q380.70517 342.2 380.70517 343.21564Q380.70517 343.73126 380.48642 344.23126Q380.2833 344.71564 379.7833 345.27814Q379.29892 345.825 378.17392 346.77814Q377.2208 347.575 376.93954 347.8719Q376.67392 348.15314 376.50204 348.4344L380.7208 348.4344ZM382.17392 345.21564Q382.17392 343.6844 382.48642 342.7625Q382.79892 341.825 383.4083 341.325Q384.0333 340.825 384.9708 340.825Q385.6583 340.825 386.17392 341.10626Q386.70517 341.3875 387.04892 341.91876Q387.39267 342.4344 387.58017 343.1844Q387.76767 343.9344 387.76767 345.21564Q387.76767 346.73126 387.45517 347.65314Q387.1583 348.575 386.5333 349.09064Q385.92392 349.59064 384.9708 349.59064Q383.73642 349.59064 383.01767 348.7Q382.17392 347.6375 382.17392 345.21564ZM383.25204 345.21564Q383.25204 347.325 383.75204 348.02814Q384.25204 348.73126 384.9708 348.73126Q385.70517 348.73126 386.18954 348.02814Q386.68954 347.325 386.68954 345.21564Q386.68954 343.09064 386.18954 342.40314Q385.70517 341.7 384.95517 341.7Q384.23642 341.7 383.79892 342.3094Q383.25204 343.09064 383.25204 345.21564ZM393.14267 349.45L392.0958 349.45L392.0958 342.73126Q391.70517 343.09064 391.08017 343.46564Q390.4708 343.825 389.98642 343.9969L389.98642 342.98126Q390.86142 342.5594 391.51767 341.98126Q392.18954 341.3875 392.4708 340.825L393.14267 340.825L393.14267 349.45ZM396.17392 347.2L397.2833 347.10626Q397.4083 347.91876 397.8458 348.325Q398.29892 348.73126 398.93954 348.73126Q399.68954 348.73126 400.2208 348.15314Q400.75204 347.575 400.75204 346.6375Q400.75204 345.73126 400.23642 345.21564Q399.73642 344.6844 398.9083 344.6844Q398.4083 344.6844 397.98642 344.91876Q397.58017 345.15314 397.3458 345.5125L396.36142 345.3875L397.18954 340.98126L401.4708 340.98126L401.4708 341.98126L398.0333 341.98126L397.58017 344.29376Q398.3458 343.7469 399.18954 343.7469Q400.31454 343.7469 401.08017 344.52814Q401.86142 345.3094 401.86142 346.54376Q401.86142 347.7 401.18954 348.5594Q400.36142 349.59064 398.93954 349.59064Q397.76767 349.59064 397.01767 348.9344Q396.2833 348.27814 396.17392 347.2Z"
+                              fill-rule="nonzero" />
+                            <path fill="#000000"
+                              d="M436.17007 348.4344L436.17007 349.45L430.48257 349.45Q430.48257 349.075 430.60757 348.71564Q430.82632 348.1375 431.29507 347.575Q431.77945 347.0125 432.6857 346.27814Q434.09195 345.1219 434.57632 344.45Q435.07632 343.77814 435.07632 343.1844Q435.07632 342.5594 434.6232 342.1375Q434.17007 341.7 433.45132 341.7Q432.6857 341.7 432.23257 342.15314Q431.77945 342.60626 431.76382 343.41876L430.6857 343.3094Q430.79507 342.09064 431.51382 341.46564Q432.2482 340.825 433.48257 340.825Q434.71695 340.825 435.4357 341.5125Q436.15445 342.2 436.15445 343.21564Q436.15445 343.73126 435.9357 344.23126Q435.73257 344.71564 435.23257 345.27814Q434.7482 345.825 433.6232 346.77814Q432.67007 347.575 432.38882 347.8719Q432.1232 348.15314 431.95132 348.4344L436.17007 348.4344ZM437.6232 345.21564Q437.6232 343.6844 437.9357 342.7625Q438.2482 341.825 438.85757 341.325Q439.48257 340.825 440.42007 340.825Q441.10757 340.825 441.6232 341.10626Q442.15445 341.3875 442.4982 341.91876Q442.84195 342.4344 443.02945 343.1844Q443.21695 343.9344 443.21695 345.21564Q443.21695 346.73126 442.90445 347.65314Q442.60757 348.575 441.98257 349.09064Q441.3732 349.59064 440.42007 349.59064Q439.1857 349.59064 438.46695 348.7Q437.6232 347.6375 437.6232 345.21564ZM438.70132 345.21564Q438.70132 347.325 439.20132 348.02814Q439.70132 348.73126 440.42007 348.73126Q441.15445 348.73126 441.63882 348.02814Q442.13882 347.325 442.13882 345.21564Q442.13882 343.09064 441.63882 342.40314Q441.15445 341.7 440.40445 341.7Q439.6857 341.7 439.2482 342.3094Q438.70132 343.09064 438.70132 345.21564ZM448.59195 349.45L447.54507 349.45L447.54507 342.73126Q447.15445 343.09064 446.52945 343.46564Q445.92007 343.825 445.4357 343.9969L445.4357 342.98126Q446.3107 342.5594 446.96695 341.98126Q447.63882 341.3875 447.92007 340.825L448.59195 340.825L448.59195 349.45ZM457.09195 342.96564L456.04507 343.04376Q455.90445 342.41876 455.65445 342.1375Q455.21695 341.6844 454.59195 341.6844Q454.09195 341.6844 453.70132 341.96564Q453.21695 342.34064 452.92007 343.04376Q452.63882 343.73126 452.6232 345.0125Q452.9982 344.4344 453.54507 344.15314Q454.10757 343.8719 454.71695 343.8719Q455.76382 343.8719 456.4982 344.65314Q457.2482 345.4344 457.2482 346.65314Q457.2482 347.46564 456.88882 348.16876Q456.54507 348.85626 455.9357 349.23126Q455.32632 349.59064 454.5607 349.59064Q453.23257 349.59064 452.40445 348.6219Q451.57632 347.65314 451.57632 345.4344Q451.57632 342.9344 452.4982 341.8094Q453.29507 340.825 454.65445 340.825Q455.67007 340.825 456.3107 341.40314Q456.96695 341.96564 457.09195 342.96564ZM452.79507 346.66876Q452.79507 347.21564 453.01382 347.71564Q453.2482 348.2 453.65445 348.46564Q454.07632 348.73126 454.54507 348.73126Q455.20132 348.73126 455.6857 348.2Q456.17007 347.65314 456.17007 346.73126Q456.17007 345.84064 455.6857 345.325Q455.21695 344.8094 454.4982 344.8094Q453.77945 344.8094 453.27945 345.325Q452.79507 345.84064 452.79507 346.66876Z"
+                              fill-rule="nonzero" />
+                            <path fill="#000000"
+                              d="M491.61932 348.4344L491.61932 349.45L485.93182 349.45Q485.93182 349.075 486.05682 348.71564Q486.27557 348.1375 486.74432 347.575Q487.2287 347.0125 488.13495 346.27814Q489.5412 345.1219 490.02557 344.45Q490.52557 343.77814 490.52557 343.1844Q490.52557 342.5594 490.07245 342.1375Q489.61932 341.7 488.90057 341.7Q488.13495 341.7 487.68182 342.15314Q487.2287 342.60626 487.21307 343.41876L486.13495 343.3094Q486.24432 342.09064 486.96307 341.46564Q487.69745 340.825 488.93182 340.825Q490.1662 340.825 490.88495 341.5125Q491.6037 342.2 491.6037 343.21564Q491.6037 343.73126 491.38495 344.23126Q491.18182 344.71564 490.68182 345.27814Q490.19745 345.825 489.07245 346.77814Q488.11932 347.575 487.83807 347.8719Q487.57245 348.15314 487.40057 348.4344L491.61932 348.4344ZM493.07245 345.21564Q493.07245 343.6844 493.38495 342.7625Q493.69745 341.825 494.30682 341.325Q494.93182 340.825 495.86932 340.825Q496.55682 340.825 497.07245 341.10626Q497.6037 341.3875 497.94745 341.91876Q498.2912 342.4344 498.4787 343.1844Q498.6662 343.9344 498.6662 345.21564Q498.6662 346.73126 498.3537 347.65314Q498.05682 348.575 497.43182 349.09064Q496.82245 349.59064 495.86932 349.59064Q494.63495 349.59064 493.9162 348.7Q493.07245 347.6375 493.07245 345.21564ZM494.15057 345.21564Q494.15057 347.325 494.65057 348.02814Q495.15057 348.73126 495.86932 348.73126Q496.6037 348.73126 497.08807 348.02814Q497.58807 347.325 497.58807 345.21564Q497.58807 343.09064 497.08807 342.40314Q496.6037 341.7 495.8537 341.7Q495.13495 341.7 494.69745 342.3094Q494.15057 343.09064 494.15057 345.21564ZM504.0412 349.45L502.99432 349.45L502.99432 342.73126Q502.6037 343.09064 501.9787 343.46564Q501.36932 343.825 500.88495 343.9969L500.88495 342.98126Q501.75995 342.5594 502.4162 341.98126Q503.08807 341.3875 503.36932 340.825L504.0412 340.825L504.0412 349.45ZM507.13495 341.98126L507.13495 340.96564L512.69745 340.96564L512.69745 341.79376Q511.88495 342.66876 511.07245 344.1219Q510.27557 345.5594 509.83807 347.09064Q509.50995 348.16876 509.43182 349.45L508.33807 349.45Q508.3537 348.4344 508.7287 346.9969Q509.11932 345.5594 509.82245 344.23126Q510.5412 342.90314 511.3537 341.98126L507.13495 341.98126Z"
+                              fill-rule="nonzero" />
+                            <path fill="#000000"
+                              d="M547.0686 348.4344L547.0686 349.45L541.3811 349.45Q541.3811 349.075 541.5061 348.71564Q541.72485 348.1375 542.1936 347.575Q542.678 347.0125 543.5842 346.27814Q544.9905 345.1219 545.47485 344.45Q545.97485 343.77814 545.97485 343.1844Q545.97485 342.5594 545.5217 342.1375Q545.0686 341.7 544.34985 341.7Q543.5842 341.7 543.1311 342.15314Q542.678 342.60626 542.66235 343.41876L541.5842 343.3094Q541.6936 342.09064 542.41235 341.46564Q543.1467 340.825 544.3811 340.825Q545.6155 340.825 546.3342 341.5125Q547.053 342.2 547.053 343.21564Q547.053 343.73126 546.8342 344.23126Q546.6311 344.71564 546.1311 345.27814Q545.6467 345.825 544.5217 346.77814Q543.5686 347.575 543.28735 347.8719Q543.0217 348.15314 542.84985 348.4344L547.0686 348.4344ZM548.5217 345.21564Q548.5217 343.6844 548.8342 342.7625Q549.1467 341.825 549.7561 341.325Q550.3811 340.825 551.3186 340.825Q552.0061 340.825 552.5217 341.10626Q553.053 341.3875 553.3967 341.91876Q553.7405 342.4344 553.928 343.1844Q554.1155 343.9344 554.1155 345.21564Q554.1155 346.73126 553.803 347.65314Q553.5061 348.575 552.8811 349.09064Q552.2717 349.59064 551.3186 349.59064Q550.0842 349.59064 549.3655 348.7Q548.5217 347.6375 548.5217 345.21564ZM549.59985 345.21564Q549.59985 347.325 550.09985 348.02814Q550.59985 348.73126 551.3186 348.73126Q552.053 348.73126 552.53735 348.02814Q553.03735 347.325 553.03735 345.21564Q553.03735 343.09064 552.53735 342.40314Q552.053 341.7 551.303 341.7Q550.5842 341.7 550.1467 342.3094Q549.59985 343.09064 549.59985 345.21564ZM559.4905 349.45L558.4436 349.45L558.4436 342.73126Q558.053 343.09064 557.428 343.46564Q556.8186 343.825 556.3342 343.9969L556.3342 342.98126Q557.2092 342.5594 557.8655 341.98126Q558.53735 341.3875 558.8186 340.825L559.4905 340.825L559.4905 349.45ZM564.1467 344.79376Q563.4905 344.54376 563.16235 344.10626Q562.84985 343.65314 562.84985 343.04376Q562.84985 342.10626 563.5217 341.46564Q564.2092 340.825 565.3186 340.825Q566.4436 340.825 567.1311 341.48126Q567.8186 342.1375 567.8186 343.075Q567.8186 343.66876 567.5061 344.10626Q567.1936 344.54376 566.553 344.79376Q567.34985 345.04376 567.7561 345.6219Q568.16235 346.2 568.16235 346.9969Q568.16235 348.09064 567.3811 348.84064Q566.6155 349.59064 565.3342 349.59064Q564.0686 349.59064 563.28735 348.84064Q562.5061 348.09064 562.5061 346.96564Q562.5061 346.1219 562.928 345.5594Q563.3655 344.9969 564.1467 344.79376ZM563.928 342.9969Q563.928 343.60626 564.3186 343.9969Q564.72485 344.3875 565.34985 344.3875Q565.9592 344.3875 566.34985 344.0125Q566.7405 343.6219 566.7405 343.0594Q566.7405 342.48126 566.3342 342.09064Q565.928 341.6844 565.3342 341.6844Q564.72485 341.6844 564.3186 342.075Q563.928 342.46564 563.928 342.9969ZM563.59985 346.96564Q563.59985 347.41876 563.803 347.84064Q564.0217 348.2625 564.4436 348.4969Q564.8655 348.73126 565.34985 348.73126Q566.09985 348.73126 566.5842 348.2469Q567.0842 347.7625 567.0842 347.0125Q567.0842 346.2469 566.5842 345.7469Q566.0842 345.2469 565.3186 345.2469Q564.5686 345.2469 564.0842 345.7469Q563.59985 346.23126 563.59985 346.96564Z"
+                              fill-rule="nonzero" />
+                          </svg>
+                          <p>
+                            Todos los expositores y asistentes a las reuniones de la comisión fueron funcionarios del poder ejecutivo. No hubo
+                            participación de académicos, sociedad civil, etc.
+
+                          </p>
+                        </div>
+                          
+                          
+                          <article class="message is-primary">
+                            <div class="message-header">
+                              <p>Directorio Legislativo Dice</p>
+                            </div>
+                            <div class="message-body">
+                              El trabajo más intenso se da formalmente en la etapa del trabajo en Comisión Presupuesto en
+                              HCDN, pero la negociación no se agota en las vías institucionales y el diálogo sigue en los despachos.
+                              <figure class="image is-5by3">
+                                <img src="" alt="fecha de presentaciones">
+                              </figure>
+                            </div>
+                          </article>
+                          
+
+                            <div class="notification is-success ">
+                              <div class="columns is-vcentered">
+                                <div class="column is-narrow">
+                                    <div class="icon has-text-white ">
+                                      <i class="fa fa-info-circle" style="    font-size: 40px;"></i>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                  <p>
+                                    Dato curioso: para el caso del presupuesto 2014, los miembros de la Comisión de Presupuesto y Hacienda deberían haber
+                                    leído 925 páginas por día para tratar el presupuesto en su completitud.
+                                  </p>
+                                </div>
+                              </div>
+                     
+                      
+                      
+         
+                    </div>
+
+                          </div>
+                          </div>
+
         </div>
       </section>
 
@@ -528,6 +971,21 @@
         </div>
       </div>
     </section>
+
+
+    <script>
+
+      var observer = new IntersectionObserver(function (entries) {
+        if (entries[0].intersectionRatio === 0)
+          document.querySelector('#nav-container').classList.add("nav-container-sticky");
+        else if (entries[0].intersectionRatio === 1)
+          document.querySelector('#nav-container').classList.remove("nav-container-sticky");
+      }, { threshold: [0, 1] });
+
+      observer.observe(document.querySelector("#nav-container-top"));
+
+
+    </script>
 
     
   </body>

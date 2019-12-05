@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$link".
-        on line 1 of D:\_work\DireLegis2019\www\src\bulma\components\breadcrumb.sass
+        on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\breadcrumb.sass
 
 1: $breadcrumb-item-color: $link !default
 2: $breadcrumb-item-hover-color: $link-hover !default
@@ -10,7 +10,7 @@ Error: Undefined variable: "$link".
 6: $breadcrumb-item-padding-horizontal: 0.75em !default
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\components\breadcrumb.sass:1
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\breadcrumb.sass:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:482:in `visit_variable'
@@ -46,4 +46,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$link\".\A         on line 1 of D:\_work\DireLegis2019\www\src\bulma\components\breadcrumb.sass\A \A 1: $breadcrumb-item-color: $link !default\A 2: $breadcrumb-item-hover-color: $link-hover !default\A 3: $breadcrumb-item-active-color: $text-strong !default\A 4: \A 5: $breadcrumb-item-padding-vertical: 0 !default\A 6: $breadcrumb-item-padding-horizontal: 0.75em !default"; }
+  content: "Error: Undefined variable: \"$link\".\A         on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\breadcrumb.sass\A \A 1: $breadcrumb-item-color: $link !default\A 2: $breadcrumb-item-hover-color: $link-hover !default\A 3: $breadcrumb-item-active-color: $text-strong !default\A 4: \A 5: $breadcrumb-item-padding-vertical: 0 !default\A 6: $breadcrumb-item-padding-horizontal: 0.75em !default"; }

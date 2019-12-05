@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$scheme-main-bis".
-        on line 1 of D:\_work\DireLegis2019\www\src\bulma\layout\footer.sass
+        on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\layout\footer.sass
 
 1: $footer-background-color: $scheme-main-bis !default
 2: $footer-color: false !default
@@ -10,7 +10,7 @@ Error: Undefined variable: "$scheme-main-bis".
 6:   background-color: $footer-background-color
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\layout\footer.sass:1
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\layout\footer.sass:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:482:in `visit_variable'
@@ -46,4 +46,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$scheme-main-bis\".\A         on line 1 of D:\_work\DireLegis2019\www\src\bulma\layout\footer.sass\A \A 1: $footer-background-color: $scheme-main-bis !default\A 2: $footer-color: false !default\A 3: $footer-padding: 3rem 1.5rem 6rem !default\A 4: \A 5: .footer\A 6:   background-color: $footer-background-color"; }
+  content: "Error: Undefined variable: \"$scheme-main-bis\".\A         on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\layout\footer.sass\A \A 1: $footer-background-color: $scheme-main-bis !default\A 2: $footer-color: false !default\A 3: $footer-padding: 3rem 1.5rem 6rem !default\A 4: \A 5: .footer\A 6:   background-color: $footer-background-color"; }

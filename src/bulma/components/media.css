@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$border".
-        on line 1 of D:\_work\DireLegis2019\www\src\bulma\components\media.sass
+        on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\media.sass
 
 1: $media-border-color: rgba($border, 0.5) !default
 2: 
@@ -10,7 +10,7 @@ Error: Undefined variable: "$border".
 6:   text-align: left
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\components\media.sass:1
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\media.sass:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/funcall.rb:186:in `perform_arg'
@@ -54,4 +54,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$border\".\A         on line 1 of D:\_work\DireLegis2019\www\src\bulma\components\media.sass\A \A 1: $media-border-color: rgba($border, 0.5) !default\A 2: \A 3: .media\A 4:   align-items: flex-start\A 5:   display: flex\A 6:   text-align: left"; }
+  content: "Error: Undefined variable: \"$border\".\A         on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\components\media.sass\A \A 1: $media-border-color: rgba($border, 0.5) !default\A 2: \A 3: .media\A 4:   align-items: flex-start\A 5:   display: flex\A 6:   text-align: left"; }

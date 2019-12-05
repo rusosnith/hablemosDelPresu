@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$gap".
-        on line 1 of D:\_work\DireLegis2019\www\src\bulma\elements\container.sass
+        on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\elements\container.sass
 
 1: $container-offset: (2 * $gap) !default
 2: 
@@ -10,7 +10,7 @@ Error: Undefined variable: "$gap".
 6:   position: relative
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\elements\container.sass:1
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\elements\container.sass:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/operation.rb:76:in `_perform'
@@ -48,4 +48,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$gap\".\A         on line 1 of D:\_work\DireLegis2019\www\src\bulma\elements\container.sass\A \A 1: $container-offset: (2 * $gap) !default\A 2: \A 3: .container\A 4:   flex-grow: 1\A 5:   margin: 0 auto\A 6:   position: relative"; }
+  content: "Error: Undefined variable: \"$gap\".\A         on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\elements\container.sass\A \A 1: $container-offset: (2 * $gap) !default\A 2: \A 3: .container\A 4:   flex-grow: 1\A 5:   margin: 0 auto\A 6:   position: relative"; }

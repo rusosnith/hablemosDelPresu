@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'clearfix'.
-        on line 4 of D:\_work\DireLegis2019\www\src\bulma\base\helpers.sass, in `clearfix'
-        from line 4 of D:\_work\DireLegis2019\www\src\bulma\base\helpers.sass
+        on line 4 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\base\helpers.sass, in `clearfix'
+        from line 4 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\base\helpers.sass
 
 1: // Float
 2: 
@@ -14,8 +14,8 @@ Error: Undefined mixin 'clearfix'.
 9: .is-pulled-right
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\base\helpers.sass:4:in `clearfix'
-D:\_work\DireLegis2019\www\src\bulma\base\helpers.sass:4
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\base\helpers.sass:4:in `clearfix'
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\base\helpers.sass:4
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -64,4 +64,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'clearfix'.\A         on line 4 of D:\_work\DireLegis2019\www\src\bulma\base\helpers.sass, in `clearfix'\A         from line 4 of D:\_work\DireLegis2019\www\src\bulma\base\helpers.sass\A \A 1: // Float\A 2: \A 3: .is-clearfix\A 4:   +clearfix\A 5: \A 6: .is-pulled-left\A 7:   float: left !important\A 8: \A 9: .is-pulled-right"; }
+  content: "Error: Undefined mixin 'clearfix'.\A         on line 4 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\base\helpers.sass, in `clearfix'\A         from line 4 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\base\helpers.sass\A \A 1: // Float\A 2: \A 3: .is-clearfix\A 4:   +clearfix\A 5: \A 6: .is-pulled-left\A 7:   float: left !important\A 8: \A 9: .is-pulled-right"; }

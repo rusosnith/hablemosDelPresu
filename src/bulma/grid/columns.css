@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'mobile'.
-        on line 65 of D:\_work\DireLegis2019\www\src\bulma\grid\columns.sass, in `mobile'
-        from line 65 of D:\_work\DireLegis2019\www\src\bulma\grid\columns.sass
+        on line 65 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\columns.sass, in `mobile'
+        from line 65 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\columns.sass
 
 60:     .columns.is-mobile > &.is-#{$i}
 61:       flex: none
@@ -16,8 +16,8 @@ Error: Undefined mixin 'mobile'.
 70:       width: 100%
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\grid\columns.sass:65:in `mobile'
-D:\_work\DireLegis2019\www\src\bulma\grid\columns.sass:65
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\columns.sass:65:in `mobile'
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\columns.sass:65
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'mobile'.\A         on line 65 of D:\_work\DireLegis2019\www\src\bulma\grid\columns.sass, in `mobile'\A         from line 65 of D:\_work\DireLegis2019\www\src\bulma\grid\columns.sass\A \A 60:     .columns.is-mobile > &.is-#{$i}\A 61:       flex: none\A 62:       width: percentage($i / 12)\A 63:     .columns.is-mobile > &.is-offset-#{$i}\A 64:       margin-left: percentage($i / 12)\A 65:   +mobile\A 66:     &.is-narrow-mobile\A 67:       flex: none\A 68:     &.is-full-mobile\A 69:       flex: none\A 70:       width: 100%"; }
+  content: "Error: Undefined mixin 'mobile'.\A         on line 65 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\columns.sass, in `mobile'\A         from line 65 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\grid\columns.sass\A \A 60:     .columns.is-mobile > &.is-#{$i}\A 61:       flex: none\A 62:       width: percentage($i / 12)\A 63:     .columns.is-mobile > &.is-offset-#{$i}\A 64:       margin-left: percentage($i / 12)\A 65:   +mobile\A 66:     &.is-narrow-mobile\A 67:       flex: none\A 68:     &.is-full-mobile\A 69:       flex: none\A 70:       width: 100%"; }

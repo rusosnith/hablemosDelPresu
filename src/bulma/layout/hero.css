@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$colors".
-        on line 14 of D:\_work\DireLegis2019\www\src\bulma\layout\hero.sass
+        on line 14 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\layout\hero.sass
 
 9:     background: none
 10:   .tabs
@@ -15,7 +15,7 @@ Error: Undefined variable: "$colors".
 19:       color: $color-invert
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\layout\hero.sass:14
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\layout\hero.sass:14
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:233:in `visit_each'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colors\".\A         on line 14 of D:\_work\DireLegis2019\www\src\bulma\layout\hero.sass\A \A 9:     background: none\A 10:   .tabs\A 11:     ul\A 12:       border-bottom: none\A 13:   // Colors\A 14:   @each $name, $pair in $colors\A 15:     $color: nth($pair, 1)\A 16:     $color-invert: nth($pair, 2)\A 17:     &.is-#{$name}\A 18:       background-color: $color\A 19:       color: $color-invert"; }
+  content: "Error: Undefined variable: \"$colors\".\A         on line 14 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\layout\hero.sass\A \A 9:     background: none\A 10:   .tabs\A 11:     ul\A 12:       border-bottom: none\A 13:   // Colors\A 14:   @each $name, $pair in $colors\A 15:     $color: nth($pair, 1)\A 16:     $color-invert: nth($pair, 2)\A 17:     &.is-#{$name}\A 18:       background-color: $color\A 19:       color: $color-invert"; }

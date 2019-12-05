@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$scheme-main".
-        on line 1 of D:\_work\DireLegis2019\www\src\bulma\base\generic.sass
+        on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\base\generic.sass
 
 1: $body-background-color: $scheme-main !default
 2: $body-size: 16px !default
@@ -10,7 +10,7 @@ Error: Undefined variable: "$scheme-main".
 6: $body-overflow-x: hidden !default
 
 Backtrace:
-D:\_work\DireLegis2019\www\src\bulma\base\generic.sass:1
+D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\base\generic.sass:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:482:in `visit_variable'
@@ -46,4 +46,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$scheme-main\".\A         on line 1 of D:\_work\DireLegis2019\www\src\bulma\base\generic.sass\A \A 1: $body-background-color: $scheme-main !default\A 2: $body-size: 16px !default\A 3: $body-min-width: 300px !default\A 4: $body-rendering: optimizeLegibility !default\A 5: $body-family: $family-primary !default\A 6: $body-overflow-x: hidden !default"; }
+  content: "Error: Undefined variable: \"$scheme-main\".\A         on line 1 of D:\_work\DireLegis2019\hablemosDelPresu\src\bulma\base\generic.sass\A \A 1: $body-background-color: $scheme-main !default\A 2: $body-size: 16px !default\A 3: $body-min-width: 300px !default\A 4: $body-rendering: optimizeLegibility !default\A 5: $body-family: $family-primary !default\A 6: $body-overflow-x: hidden !default"; }
