@@ -53,6 +53,17 @@
       .box, .card{
         background-color: white;
       }
+
+      .is-paddingless h2.subtitle {
+    padding: 11px 19px 0px 19px;
+}
+
+.level {
+    align-items: baseline;
+    
+}
+
+
     </style>
 
   </head>
@@ -75,13 +86,13 @@
             </div>
             <div id="navbarMenuHeroC" class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item is-active">
+                <a class="navbar-item is-active" disabled>
                   Inicio
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="https://directoriolegislativo.org" target="_blank">
                   Directorio Legislativo
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="https://directoriolegislativo.org/contacto/" target="_blank">
                   Contacto
                 </a>
               </div>
@@ -96,15 +107,17 @@
       <div class="hero-body ">
         <div class="container has-text-centered ">
           <div class="columns is-mobile is-centered ">
-            <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
+            <div class="column is-four-fifths-tablet is-half-desktop has-text-left	">
                 <figure class="image is-centered" >
-                  <img src="images/DL_LogoHablemosv01.png" >
+                  <img src="images/DL_LogoHablemosv01.png" style="
+                      padding-right: 9%;
+                  ">
                 </figure>
 
             <h2 class="subtitle">
-            ¿Cuánta plata va a tener el Estado el próximo año? ¿Cuál es el origen de los recursos? ¿Quién gasta? ¿En qué se gasta?
-            ¿Para qué se gasta? ¿Quién lo decide?<br>
             El presupuesto se discute entre pocos, lo entienden algunos, pero nos afecta a todos.
+            ¿Cuánta plata va a tener el Estado el próximo año? ¿Cuál es el origen de los recursos?
+            ¿Quién gasta? ¿En qué se gasta? ¿Para qué se gasta? ¿Quién lo decide?
             </h2>
             </div>
           </div>
@@ -134,17 +147,34 @@
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
-            <h2 class="title">
+            <!-- <h2 class="title">
               Introducción
-            </h2>
+            </h2> -->
             <p>
             El presupuesto es una ley anual que debate y sanciona el Congreso de la Nación. El proyecto planifica los ingresos que
             recibirá el Estado y cómo se gastarán para satisfacer las necesidades de la ciudadanía: mejorar una ruta, construir
             escuelas, hospitales o pagar jubilaciones, entre tantas otras.
             </p>
-            <figure class="image is-centered">
-              <img src="images/pasos.png" style="width: 65%;margin:10px auto">
-            </figure>
+
+            <div class="columns is-vcentered is-centered">
+              <div class="column has-text-centered">
+                <img src="images/DL_badge_ejecutive_small.png">
+                <p class="heading">Formula un presupuesto y lo presenta</p>
+              </div>
+              <div class="column has-text-centered">
+                <img src="images/DL_badge_legis_big.png">
+                <p class="heading">Discute el proyecto y lo aprueba</p>
+              </div>
+              <div class="column has-text-centered">
+                <img src="images/DL_badge_ejecutive_small.png">
+                <p class="heading">Ejecuta ese presupuesto aprobado</p>
+              </div>
+              <div class="column has-text-centered">
+                <img src="images/DL_badge_legis_small.png">
+                <p class="heading">Controla la ejecución del presupuesto</p>
+              </div>
+            </div>
+         
             <p>
               Para formar parte de esta conversación es importante
               conocer cómo es el camino que recorre el proyecto de Ley de Presupuesto hasta convertirse en Ley.
@@ -160,7 +190,7 @@
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
             <h2 class="title">
-              Pasos: Tratamiento y Aprobación
+              Tratamiento y aprobación en el Congreso: paso a paso
             </h2>
 <!--             <h3 class="subtitle">
               Breve subtitulo explicativo de esta subsección
@@ -172,7 +202,7 @@
 
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
-          <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
+          <div class="column is-two-thirds-desktop ">
            
             <ul class="steps is-narrow is-medium is-centered has-content-centered">
               <li class="steps-segment">
@@ -269,7 +299,7 @@
 
                 <div class="notification is-primary ">
                   <div class="columns ">
-                    <div class="column is-narrow">
+                    <div class="column is-narrow has-text-centered-mobile	">
                       <div class="icon has-text-white ">
                         <i class="fa fa-commenting-o" style="    font-size: 40px;"></i>
                       </div>
@@ -302,7 +332,7 @@
 
               <div class="notification">
               <span class="icon has-text-primary is-pulled-right">
-                <i class="fa fa-exclamation-triangle" style="    font-size: 20px; margin-right: -20px;"></i>
+                <i class="fa fa-address-card-o" style="    font-size: 20px; margin-right: -20px;"></i>
               </span>
               <h2 class="subtitle">En los últimos 10 años:</h2>
               <nav class="level">
@@ -344,7 +374,7 @@
 
                     <div class="notification">
                       <span class="icon has-text-primary is-pulled-right">
-                        <i class="fa fa-exclamation-triangle" style="    font-size: 20px; margin-right: -20px;"></i>
+                        <i class="fa fa-address-card-o" style="    font-size: 20px; margin-right: -20px;"></i>
                       </span>
                       <h2 class="subtitle">Comisión de Presupuesto y Hacienda de Diputados<Br> En los últimos 10 años:</h2>
                       
@@ -363,7 +393,7 @@
                         </div>
                         <div class="level-item column has-text-centered">
                           <div>
-                            <p class="heading ">Eran de la Pcia de Santa Fe:</p>
+                            <p class="heading ">Representantes de la Provincia de Santa Fe:</p>
                             <p class="subtitle has-text-primary">67%</p>
                           </div>
                         </div>
@@ -381,7 +411,10 @@
 
           <div class="box is-fullwidth">
             <h2 class="subtitle">Historial de Cargos de los Presidentes de Comisión (2008-2019)</h2>
-            <table class="table is-striped is-narrow is-hoverable is-size-7	">
+            <div class="table-container">
+              
+            
+            <table class="table is-striped is-bordered is-narrow is-hoverable is-size-7	" style="min-width: 800px;">
               <tbody>
                 <tr>
                   <th colspan="1" rowspan="1">
@@ -537,16 +570,16 @@
                 </tr>
               </tbody>
             </table>
-          
+          </div>
           </div>
 
-          <div class="columns is-mobile is-centered">
-            <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
+          <div class="columns  is-centered">
+            <div class="column is-fullwidth-mobile is-four-fifths-tablet is-two-thirds-desktop has-text-left" >
               
-                          <div class="notification image has-content-centered">
+                          <div class="notification image "style="text-align: center;">
                             <h2 class="subtitle">Cantidad reuniones de la Comisión por el Proyecto de ley de presupuesto</h2>
                           <svg version="1.1" viewBox="0.0 0.0 611.0 371.0" fill="none" stroke="none" stroke-linecap="square"
-                            stroke-miterlimit="10" width="611" height="371" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            stroke-miterlimit="10" style="width: 100%; max-width:600px; margin:auto" xmlns:xlink="http://www.w3.org/1999/xlink"
                             xmlns="http://www.w3.org/2000/svg" style="margin:auto; display:block">
                             <path fill="" d="M0 0L611.0 0L611.0 371.0L0 371.0L0 0Z" fill-rule="nonzero" />
                             <clipPath id="id_0">
@@ -703,17 +736,21 @@
                               d="M547.0686 348.4344L547.0686 349.45L541.3811 349.45Q541.3811 349.075 541.5061 348.71564Q541.72485 348.1375 542.1936 347.575Q542.678 347.0125 543.5842 346.27814Q544.9905 345.1219 545.47485 344.45Q545.97485 343.77814 545.97485 343.1844Q545.97485 342.5594 545.5217 342.1375Q545.0686 341.7 544.34985 341.7Q543.5842 341.7 543.1311 342.15314Q542.678 342.60626 542.66235 343.41876L541.5842 343.3094Q541.6936 342.09064 542.41235 341.46564Q543.1467 340.825 544.3811 340.825Q545.6155 340.825 546.3342 341.5125Q547.053 342.2 547.053 343.21564Q547.053 343.73126 546.8342 344.23126Q546.6311 344.71564 546.1311 345.27814Q545.6467 345.825 544.5217 346.77814Q543.5686 347.575 543.28735 347.8719Q543.0217 348.15314 542.84985 348.4344L547.0686 348.4344ZM548.5217 345.21564Q548.5217 343.6844 548.8342 342.7625Q549.1467 341.825 549.7561 341.325Q550.3811 340.825 551.3186 340.825Q552.0061 340.825 552.5217 341.10626Q553.053 341.3875 553.3967 341.91876Q553.7405 342.4344 553.928 343.1844Q554.1155 343.9344 554.1155 345.21564Q554.1155 346.73126 553.803 347.65314Q553.5061 348.575 552.8811 349.09064Q552.2717 349.59064 551.3186 349.59064Q550.0842 349.59064 549.3655 348.7Q548.5217 347.6375 548.5217 345.21564ZM549.59985 345.21564Q549.59985 347.325 550.09985 348.02814Q550.59985 348.73126 551.3186 348.73126Q552.053 348.73126 552.53735 348.02814Q553.03735 347.325 553.03735 345.21564Q553.03735 343.09064 552.53735 342.40314Q552.053 341.7 551.303 341.7Q550.5842 341.7 550.1467 342.3094Q549.59985 343.09064 549.59985 345.21564ZM559.4905 349.45L558.4436 349.45L558.4436 342.73126Q558.053 343.09064 557.428 343.46564Q556.8186 343.825 556.3342 343.9969L556.3342 342.98126Q557.2092 342.5594 557.8655 341.98126Q558.53735 341.3875 558.8186 340.825L559.4905 340.825L559.4905 349.45ZM564.1467 344.79376Q563.4905 344.54376 563.16235 344.10626Q562.84985 343.65314 562.84985 343.04376Q562.84985 342.10626 563.5217 341.46564Q564.2092 340.825 565.3186 340.825Q566.4436 340.825 567.1311 341.48126Q567.8186 342.1375 567.8186 343.075Q567.8186 343.66876 567.5061 344.10626Q567.1936 344.54376 566.553 344.79376Q567.34985 345.04376 567.7561 345.6219Q568.16235 346.2 568.16235 346.9969Q568.16235 348.09064 567.3811 348.84064Q566.6155 349.59064 565.3342 349.59064Q564.0686 349.59064 563.28735 348.84064Q562.5061 348.09064 562.5061 346.96564Q562.5061 346.1219 562.928 345.5594Q563.3655 344.9969 564.1467 344.79376ZM563.928 342.9969Q563.928 343.60626 564.3186 343.9969Q564.72485 344.3875 565.34985 344.3875Q565.9592 344.3875 566.34985 344.0125Q566.7405 343.6219 566.7405 343.0594Q566.7405 342.48126 566.3342 342.09064Q565.928 341.6844 565.3342 341.6844Q564.72485 341.6844 564.3186 342.075Q563.928 342.46564 563.928 342.9969ZM563.59985 346.96564Q563.59985 347.41876 563.803 347.84064Q564.0217 348.2625 564.4436 348.4969Q564.8655 348.73126 565.34985 348.73126Q566.09985 348.73126 566.5842 348.2469Q567.0842 347.7625 567.0842 347.0125Q567.0842 346.2469 566.5842 345.7469Q566.0842 345.2469 565.3186 345.2469Q564.5686 345.2469 564.0842 345.7469Q563.59985 346.23126 563.59985 346.96564Z"
                               fill-rule="nonzero" />
                           </svg>
-                          <p>
-                            Todos los expositores y asistentes a las reuniones de la comisión fueron funcionarios del poder ejecutivo. No hubo
-                            participación de académicos, sociedad civil, etc.
-
+                          
+                            <div class="columns is-centered"><div class="column is-fullwidth-mobile is-three-quarters-desktop notification is-info"><p>
+                            Todos los expositores y asistentes a las reuniones de la comisión fueron funcionarios del poder ejecutivo. <b>No hubo
+                            participación de académicos, sociedad civil, etc.</b>
                           </p>
+                          </div>
+                          </div>
+                          <br>
+
                         </div>
                           
                           
                         <div class="notification is-primary ">
                           <div class="columns ">
-                            <div class="column is-narrow">
+                            <div class="column is-narrow has-text-centered-mobile	">
                               <div class="icon has-text-white ">
                                 <i class="fa fa-commenting-o" style="    font-size: 40px;"></i>
                               </div>
@@ -722,15 +759,15 @@
                               <p>
                                 <b>Directorio Legislativo Dice:</b>
                                 <br>
-                                El trabajo más intenso se da formalmente en la etapa del trabajo en Comisión Presupuesto en
-                                HCDN, pero la negociación no se agota en las vías institucionales y el diálogo sigue en los despachos.
+                                El trabajo más intenso se da formalmente en la etapa del trabajo en la Comisión de Presupuesto y Hacienda de Diputados,
+                                pero la negociación no se agota en las vías institucionales y el diálogo sigue en los despachos.
                               </p>
                             </div>
                           </div>
                         </div>    
                          
 
-                  <div class="box">
+                  <div class="box is-paddingless">
                         <h2 class="subtitle">Fechas de presentación de los Proyectos de Presupuesto, días de tratamiento y cantidad de páginas por día</h2>
                           <figure class="image">
                             <img src="images/PresupuestosFechas.jpg" alt="Fechas de entrega">
@@ -740,7 +777,7 @@
 
                             <div class="notification is-success ">
                               <div class="columns is-vcentered">
-                                <div class="column is-narrow">
+                                <div class="column is-narrow has-text-centered-mobile	">
                                     <div class="icon has-text-white ">
                                       <i class="fa fa-info-circle" style="    font-size: 40px;"></i>
                                     </div>
@@ -773,17 +810,16 @@
                 <br><br>
                 La Oficina de Presupuesto del Congreso (OPC) es un organismo desconcentrado del Congreso de la Nación (forma parte de la
                 Administración Central pero no se encuentra subordinado al Congreso ni a ningún otro organismo.). Su misión es asistir
-                técnicamente al Parlamento en el análisis y seguimiento de las leyes en materia fiscal y presupuestaria. La OPC
-                contribuye con el análisis del proyecto de Ley de Presupuesto. Una vez sancionada la ley, la OPC también analiza la
-                ejecución de ese presupuesto y examina el impacto que tuvo en las políticas de gobierno. Lo que surge del análisis no
-                tiene carácter vinculante.
+                técnicamente al Congreso en el análisis y seguimiento de las leyes en materia fiscal y presupuestaria. La OPC contribuye
+                con el análisis del proyecto de Ley de Presupuesto. Una vez sancionada la ley, la OPC también analiza la ejecución y
+                examina el impacto que tuvo en las políticas de gobierno. Lo que surge del análisis no tiene carácter vinculante.
 
               </h3>
       
        
                         <div class="notification is-success ">
                           <div class="columns is-vcentered">
-                            <div class="column is-narrow">
+                            <div class="column is-narrow has-text-centered-mobile	">
                               <div class="icon has-text-white ">
                                 <i class="fa fa-info-circle" style="    font-size: 40px;"></i>
                               </div>
@@ -807,7 +843,7 @@
       
       <div class="notification is-primary ">
         <div class="columns ">
-          <div class="column is-narrow">
+          <div class="column is-narrow has-text-centered-mobile	">
             <div class="icon has-text-white ">
               <i class="fa fa-commenting-o" style="    font-size: 40px;"></i>
             </div>
@@ -846,20 +882,20 @@
     
             <div class="notification">
                       <span class="icon has-text-primary is-pulled-right">
-                        <i class="fa fa-exclamation-triangle" style="    font-size: 20px; margin-right: -20px;"></i>
+                        <i class="fa fa-address-card-o" style="    font-size: 20px; margin-right: -20px;"></i>
                       </span>
-                      <h2 class="subtitle">Dictamenes - En los últimos 10 años:</h2>
+                      <h2 class="subtitle">Dictámenes - En los últimos 10 años:</h2>
                       
                       <nav class="level columns is-multiline">
                         <div class="level-item column has-text-centered">
                           <div>
-                            <p class="heading ">Recomiendan hacer modificaciones al proyecto:</p>
+                            <p class="heading ">Dictámenes de <b>mayoría</b> que recomiendan hacer modificaciones:</p>
                             <p class="subtitle has-text-primary">90%: Todos menos el de 2014</p>
                           </div>
                         </div>
                         <div class="level-item column has-text-centered">
                           <div>
-                            <p class="heading ">Dictámenes de minoría que aconsejan el rechazo del proyecto:</p>
+                            <p class="heading ">Dictámenes de <b>minoría</b> que aconsejan el rechazo:</p>
                             <p class="subtitle has-text-primary">55%. El resto, plantea modificaciones</p>
                           </div>
                         </div>
@@ -899,31 +935,13 @@
             </h3>
     
             
-            <!-- <div class="notification is-primary ">
-              <div class="columns ">
-                <div class="column is-narrow">
-                  <div class="icon has-text-white ">
-                    <i class="fa fa-commenting-o" style="    font-size: 40px;"></i>
-                  </div>
-                </div>
-                <div class="column">
-                  <p>
-                    <b>Directorio Legislativo Dice:</b>
-                    <br>
-                    Completar cta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                    consequuntur
-                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                    amet, consectetur, adipisci velit, sed quia non
-                  </p>
-                </div>
-              </div>
-            </div> -->
+
 
             
               
             <div class="notification is-success ">
               <div class="columns is-vcentered">
-                <div class="column is-narrow">
+                <div class="column is-narrow has-text-centered-mobile	">
                   <div class="icon has-text-white ">
                     <i class="fa fa-info-circle" style="    font-size: 40px;"></i>
                   </div>
@@ -931,7 +949,7 @@
                 <div class="column">
                   <p>
                     <strong>Sesiones especiales:</strong> <br>
-                    Todas las sesiones de presupuesto de 2009 a 2019 de fueron Especiales
+                    Todas las sesiones de presupuesto de 2009 a 2019 fueron Especiales*
                   </p>
                 </div>
               </div>
@@ -972,7 +990,7 @@
 
                 <div class="notification">
                   <span class="icon has-text-primary is-pulled-right">
-                    <i class="fa fa-exclamation-triangle" style="    font-size: 20px; margin-right: -20px;"></i>
+                    <i class="fa fa-address-card-o" style="    font-size: 20px; margin-right: -20px;"></i>
                   </span>
                   <h2 class="subtitle">Comisión de Presupuesto y Hacienda del <b>SENADO</b><Br> En los últimos 10 años:</h2>
                 
@@ -991,13 +1009,13 @@
                     </div>
                     <div class="level-item column has-text-centered">
                       <div>
-                        <p class="heading ">Eran de la Pcia de Buenos Aires:</p>
+                        <p class="heading ">Representantes de la Pcia de Buenos Aires:</p>
                         <p class="subtitle has-text-primary">83%</p>
                       </div>
                     </div>
                     <div class="level-item column has-text-centered">
                       <div>
-                        <p class="heading ">Presidentes de comisión: Estudios cursados</p>
+                        <p class="heading ">Presidentes de comisión:</p>
                         <p class="subtitle has-text-primary">33% en Cs Económicas, 33% en Cs Sociales y 33% en Sistemas o Ing.</p>
                       </div>
                     </div>
@@ -1007,7 +1025,7 @@
 
                 <div class="notification is-primary ">
                 <div class="columns ">
-                  <div class="column is-narrow">
+                  <div class="column is-narrow has-text-centered-mobile	">
                     <div class="icon has-text-white ">
                       <i class="fa fa-commenting-o" style="    font-size: 40px;"></i>
                     </div>
@@ -1035,7 +1053,7 @@
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
             <h2 class="title is-4 has-text-black">
-              6b. *SOLO SI HUBO MODIFICACION* Vuelve a Diputados
+              6b. <strong>Solo si hubo modificación</strong> vuelve a Diputados
             </h2>
             <h3 class="subtitle is-6">
               Los diputados pueden aceptar las modificaciones del Senado o pueden insistir con el proyecto original. Para aceptar las
@@ -1071,7 +1089,7 @@
 
     <div class="notification is-primary ">
       <div class="columns ">
-        <div class="column is-narrow">
+        <div class="column is-narrow has-text-centered-mobile	">
           <div class="icon has-text-white ">
             <i class="fa fa-commenting-o" style="    font-size: 40px;"></i>
           </div>
@@ -1090,7 +1108,7 @@
 
         <div class="notification is-success ">
           <div class="columns is-vcentered">
-            <div class="column is-narrow">
+            <div class="column is-narrow has-text-centered-mobile	">
               <div class="icon has-text-white ">
                 <i class="fa fa-info-circle" style="    font-size: 40px;"></i>
               </div>
@@ -1099,7 +1117,7 @@
               <p>
                 <strong>Sesiones Ordinarias:</strong> <br>
                 En los últimos diez años, la Ley de Presupuesto se sancionó en sesiones ordinarias* salvo respecto del presupuesto para
-                los años 2012 y 2018. Este año se espera tratarlo en extraordinarias*.
+                los años 2012 y 2018. Este año se esperaba tratarlo en extraordinarias*.
               </p>
             </div>
           </div>
@@ -1135,6 +1153,58 @@
         </div>
       </div>
     </section>
+
+<footer class="footer has-background-grey-lighter">
+  <div class="container has-text-centered">
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <p>
+    <strong>Hablemos del Presupuesto</strong> es un proyecto de <a href="https://directoriolegislativo.org" target="_blank">Directorio
+      Legislativo</a>.
+      </p>
+      </div>
+      <div class="level-item has-text-centered">
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control">
+    <div class="tags is-large">
+      <a href="https://www.facebook.com/DireLegislativo/" class="tag " target="_blank"><i class="fa fa-facebook"></i></a>
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags is-large">
+      <a href="https://twitter.com/DireLegislativo" class="tag " target="_blank"><i class="fa fa-twitter"></i></a>
+    </div>
+  </div>
+
+  <div class="control">
+    <div class="tags is-large">
+      <a href="mailto:info@directoriolegislativo.org" class="tag " target="_blank"><i class="fa fa-envelope"></i></a>
+    </div>
+  </div>
+</div>
+      </div>
+    
+    
+    </nav>
+    
+     
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <figure class="image is-centered">
+          <img src="images/DL_LogoHablemosv01.png" style="max-width:250px ;">
+        </figure>
+      </div>
+      <div class="level-item has-text-centered">
+      <figure class="image is-centered">
+        <img src="images/DL_LOGO_DL_2020v01.png" style="max-width:200px ;">
+      </figure>
+      </div>
+      
+      
+    </nav>
+  </div>
+</footer>
 
 
     <script>
