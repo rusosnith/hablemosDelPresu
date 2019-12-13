@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Oswald:600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/bulma-steps.css">
-
+<link href="css/featherlight.css" type="text/css" rel="stylesheet" />
 
     <style type="text/css">
 
@@ -47,7 +47,7 @@
       }
 
       .card{
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       }
  
       .box, .card{
@@ -62,6 +62,13 @@
     align-items: baseline;
     
 }
+
+@media screen and (min-width: 769px), print{
+      .modal-content, .modal-card {
+          width: inherit;
+      }
+}
+
 
 
     </style>
@@ -769,9 +776,15 @@
 
                   <div class="box is-paddingless">
                         <h2 class="subtitle">Fechas de presentación de los Proyectos de Presupuesto, días de tratamiento y cantidad de páginas por día</h2>
-                          <figure class="image">
+                    
+                        <figure class="image">
+                          <a href="images/PresupuestosFechas.jpg" data-featherlight="image" tabindex="-1">
                             <img src="images/PresupuestosFechas.jpg" alt="Fechas de entrega">
-                          </figure>
+                          </a>
+                        </figure>
+
+                          
+
                     </div>
                           
 
@@ -904,9 +917,11 @@
                     </div>
 
             <figure class="image">
+              <a href="images/PresupuestosModificaciones.jpg" data-featherlight="image" tabindex="-1">
               <img src="images/PresupuestosModificaciones.jpg" alt="Fechas de entrega">
+              </a>
             </figure>
-    
+
         
           </div>
         </div>
@@ -1124,26 +1139,82 @@
         
         </div>
 
-            <div class="card">
-              <div class="card-content">
-                <div class="content">
+            <div class="notification">
+              <p>
                   En el año 2011, no se lograron los consensos necesarios y no se pudo aprobar un presupuesto. Se extendió el
                   presupuesto
                   del año 2010 con modificaciones que se realizaron mediante decretos y decisiones administrativas.
+                  <br>
+                  <br>
+                  Así se vio en los medios del momento:
+                  <br><br>
+                </p>
+                
+                
+              <div class="columns is-multiline is-centered">
+                
+                <div class="column is-one-third-desktop is-half-tablet">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="images/SinPresu_ambito.JPG" data-featherlight="image" tabindex="-1">
+                          <img src="images/SinPresu_ambito.JPG" alt="Fechas de entrega">
+                        </a>
+                      </figure>
+                    </div>
+                  </div>
                 </div>
+
+                <div class="column is-one-third-desktop is-half-tablet">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="images/SinPresu_chequeado.JPG" data-featherlight="image" tabindex="-1">
+                          <img src="images/SinPresu_chequeado.JPG" alt="Fechas de entrega">
+                        </a>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+
+                                <div class="column is-one-third-desktop is-half-tablet">
+                                  <div class="card">
+                                    <div class="card-image">
+                                      <figure class="image">
+                                        <a href="images/SinPresu_elpais.JPG" data-featherlight="image" tabindex="-1">
+                                          <img src="images/SinPresu_elpais.JPG" alt="Fechas de entrega">
+                                        </a>
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                                <div class="column is-one-third-desktop is-half-tablet">
+                                                  <div class="card">
+                                                    <div class="card-image">
+                                                      <figure class="image">
+                                                        <a href="images/SinPresu_elparlamentario.JPG" data-featherlight="image" tabindex="-1">
+                                                          <img src="images/SinPresu_elparlamentario.JPG" alt="Fechas de entrega">
+                                                        </a>
+                                                      </figure>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                <div class="column is-one-third-desktop is-half-tablet">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="images/SinPresu_pagina12.JPG" data-featherlight="image" tabindex="-1">
+                          <img src="images/SinPresu_pagina12.JPG" alt="Fechas de entrega">
+                        </a>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
-              <div class="card-image columns is-multiline">
-
-
-                        <figure class="column is-half image"><img src="images/SinPresu_ambito.JPG"></figure>
-                        <figure class="column is-half image"><img src="images/SinPresu_chequeado.JPG"></figure>
-                        <figure class="column is-half image"><img src="images/SinPresu_elpais.JPG"></figure>
-                        <figure class="column is-half image"><img src="images/SinPresu_elparlamentario.JPG"></figure>
-                        <figure class="column is-half image"><img src="images/SinPresu_pagina12.JPG"></figure>
-     
-               
-              </div>
+            <br>
             </div>
 
    
@@ -1221,6 +1292,7 @@
 
     </script>
 
-    
+  <script src="//code.jquery.com/jquery-latest.js"></script>
+  <script src="js/featherlight.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
