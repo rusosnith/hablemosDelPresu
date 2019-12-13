@@ -63,13 +63,20 @@
     
 }
 
-@media screen and (min-width: 769px), print{
-      .modal-content, .modal-card {
-          width: inherit;
-      }
+    .steps.is-horizontal.is-narrow .steps-segment:not(:last-child),    .steps.is-horizontal.is-narrow.has-content-centered .steps-segment:last-child {
+        min-width: 2.5em;
+    }
+
+@media screen and (min-width: 769px){
+    .steps.is-horizontal.is-narrow .steps-segment:not(:last-child),    .steps.is-horizontal.is-narrow.has-content-centered .steps-segment:last-child {
+        min-width: 6em;
+    }
+
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
     </style>
 
@@ -209,82 +216,92 @@
 
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
-          <div class="column is-two-thirds-desktop ">
+          <div class="column is-full-mobile is-two-thirds-desktop ">
            
-            <ul class="steps is-narrow is-medium is-centered has-content-centered">
-              <li class="steps-segment">
-                <a href="#" class="has-text-dark">
+            <ul class="steps is-narrow is-medium is-horizontal is-centered has-content-centered">
+              <li class="steps-segment is-active" id="step1">
+                <a href="#step1section" class="has-text-dark">
                   <span class="steps-marker">
                     <span class="icon">
                       <i class="fa fa-comment"></i>
                     </span>
                   </span>
                   <div class="steps-content">
-                    <p class="heading">Diputados</p>
+                    <p class="heading is-hidden-mobile">Diputados</p>
                   </div>
                 </a>
               </li>
-              <li class="steps-segment">
-                <a href="#" class="has-text-dark">
+              <li class="steps-segment" id="step2">
+                <a href="#step2section" class="has-text-dark">
                   <span class="steps-marker">
                     <span class="icon">
                       <i class="fa fa-users"></i>
                     </span>
                   </span>
                   <div class="steps-content">
-                    <p class="heading">Comisión de Presupuesto</p>
+                    <p class="heading is-hidden-mobile">Comisión de Presupuesto</p>
                   </div>
                 </a>
               </li>
-              <li class="steps-segment is-active">
+              <li class="steps-segment" id="step3">
+                <a href="#step3section" class="has-text-dark">
                 <span class="steps-marker">
                   <span class="icon">
                     <i class="fa fa-building-o"></i>
                   </span>
                 </span>
                 <div class="steps-content">
-                  <p class="heading">Oficina de Presupuesto del Congreso</p>
+                  <p class="heading is-hidden-mobile">Oficina de Presupuesto del Congreso</p>
                 </div>
+                </a>
               </li>
-              <li class="steps-segment">
+              <li class="steps-segment" id="step4">
+                                <a href="#step4section" class="has-text-dark">
                 <span class="steps-marker ">
                   <span class="icon">
                     <i class="fa fa-file-text-o"></i>
                   </span>
                 </span>
                 <div class="steps-content">
-                  <p class="heading">Dictamen</p>
-                </div>
+                  <p class="heading is-hidden-mobile">Dictamen</p>
+                </div></a>
               </li>
-              <li class="steps-segment">
+              <li class="steps-segment" id="step5">
+                                <a href="#step5section" class="has-text-dark">
+
                 <span class="steps-marker">
                   <span class="icon">
                     <i class="fa fa-hand-paper-o"></i>
                   </span>
                 </span>
                 <div class="steps-content">
-                  <p class="heading">Tratamiento</p>
-                </div>
+                  <p class="heading is-hidden-mobile">Tratamiento</p>
+                </div></a>
               </li>
-              <li class="steps-segment">
+              <li class="steps-segment" id="step6">
+                                <a href="#step6section" class="has-text-dark">
+
                 <span class="steps-marker ">
                   <span class="icon">
                     <i class="fa fa-comment"></i>
                   </span>
                 </span>
                 <div class="steps-content">
-                  <p class="heading">Senado</p>
-                </div>
+                  <p class="heading is-hidden-mobile">Senado</p>
+                </div></a>
               </li>
-              <li class="steps-segment">
+              <li class="steps-segment" id="step7">
+                                <a href="#step7section" class="has-text-dark">
+
                 <span class="steps-marker ">
                   <span class="icon">
                     <i class="fa fa-check"></i>
                   </span>
                 </span>
                 <div class="steps-content">
-                  <p class="heading">Promulgación</p>
+                  <p class="heading is-hidden-mobile">Promulgación</p>
                 </div>
+                </a>
               </li>
             </ul>
           </div>
@@ -293,7 +310,8 @@
   </section>
 
       <!-- PASO 1 -->
-  <section class="section is-medium" style="background-color:rgba(116, 185, 199, 0.2)">
+  <div class="step" data-step="paso1"></div>
+      <section id="step1section" class="section is-medium" style="background-color:rgba(116, 185, 199, 0.2)" >
       <div class="container is-widescreen" >
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
@@ -366,7 +384,8 @@
 
   
       <!-- PASO 2 -->
-      <section class="section is-medium" >
+      <div class="step" data-step="paso2"></div>
+      <section id="step2section" class="section is-medium" >
         <div class="container is-widescreen" >
           <div class="columns is-mobile is-centered">
             <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
@@ -811,7 +830,8 @@
 
 
       <!-- PASO 3 -->
-      <section class="section is-medium" style="background-color:rgba(116, 185, 199, 0.2)">
+      <div class="step" data-step="paso3"></div>
+      <section id="step3section" class="section is-medium" style="background-color:rgba(116, 185, 199, 0.2)" >
         <div class="container is-widescreen" >
           <div class="columns is-mobile is-centered">
             <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
@@ -880,7 +900,8 @@
       </section>
 
     <!-- PASO 4 -->
-    <section class="section is-medium">
+    <div class="step" data-step="paso4"></div>
+    <section id="step4section" class="section is-medium" >
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
@@ -929,7 +950,8 @@
     </section>
 
     <!-- PASO 5 -->
-    <section class="section is-medium" style="background-color:rgba(116, 185, 199, 0.2)">
+    <div  class="step" data-step="paso5"></div>
+    <section id="step5section" class="section is-medium" style="background-color:rgba(116, 185, 199, 0.2)" >
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
@@ -978,7 +1000,8 @@
 
 
     <!-- PASO 6 -->
-    <section class="section is-medium">
+    <div  class="step" data-step="paso6"></div>
+    <section  id="step6section" class="section is-medium" >
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
@@ -1063,7 +1086,7 @@
 
 
     <!-- PASO 6b -->
-    <section class="section is-medium" style="background-color:rgba(116, 185, 199, 0.2)">
+    <section class="section is-medium" style="background-color:rgba(116, 185, 199, 0.2)" >
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
@@ -1086,7 +1109,8 @@
 
 
     <!-- PASO 7 -->
-    <section class="section is-medium">
+    <div class="step" data-step="paso6"></div>
+    <section id="step7section" class="section is-medium" >
       <div class="container is-widescreen">
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-tablet is-two-thirds-desktop has-text-left	">
@@ -1277,7 +1301,8 @@
   </div>
 </footer>
 
-
+<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+<script src="https://unpkg.com/scrollama"></script>
     <script>
 
       var observer = new IntersectionObserver(function (entries) {
@@ -1288,6 +1313,31 @@
       }, { threshold: [0, 1] });
 
       observer.observe(document.querySelector("#nav-container-top"));
+
+
+      // instantiate the scrollama
+        const scroller = scrollama();
+
+        // setup the instance, pass callback functions
+        scroller
+          .setup({
+            step: '.step'
+          })
+          .onStepEnter(response => {
+
+            $(".steps-segment").removeClass("is-active")
+            var extra = response.direction =="up"?0:1;
+
+            $("#step"+ (response.index+extra)).addClass("is-active")
+            // { element, index, direction }
+            
+          })
+          .onStepExit(response => {
+            // { element, index, direction }
+          });
+
+        // setup resize event
+        window.addEventListener('resize', scroller.resize);
 
 
     </script>
