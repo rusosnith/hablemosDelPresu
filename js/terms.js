@@ -13,7 +13,7 @@ var glossary = {
             {
             "term": "opc",
             "title": "Oficina de Presupuesto del Congreso",
-            "definition": "..."
+            "definition": "La Oficina de Presupuesto del Congreso de la Nación Argentina brinda soporte a los legisladores para profundizar la comprensión de temas que involucren recursos públicos, democratizando el conocimiento y la toma de decisiones. Es una oficina técnica de análisis fiscal que produce informes abiertos a la ciudadanía."
             },
             {
             "term": "ordendeldia",
