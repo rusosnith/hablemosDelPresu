@@ -133,7 +133,7 @@ var glossary = {
         {
             "term": "dictamen",
             "title": "Dictámen",
-            "definition": "..."
+            "definition": "Es la resolución escrita, adoptada por una o varias comisiones en el ejercicio de sus funciones sobre una iniciativa sometida a su consideración."
         }
     
     ]
