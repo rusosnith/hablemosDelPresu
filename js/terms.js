@@ -129,7 +129,12 @@ var glossary = {
             "term": "CPMRC",
             "title": "Comisión Parlamentaria Mixta Revisora de Cuentas",
             "definition": "es una comisión bicameral(la integran diputados y senadores) y permanente.Su función principal consiste en analizar los informes que elabora y aprueba la Auditoría General de la Nación, para luego someterlos al tratamiento del pleno de ambas Cámaras."
-            }
+            },
+        {
+            "term": "dictamen",
+            "title": "Dictámen",
+            "definition": "..."
+        }
     
     ]
 }
